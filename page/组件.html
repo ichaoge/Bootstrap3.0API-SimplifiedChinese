@@ -34,8 +34,8 @@ pre code { background: transparent; }
 
 
 
-  <style type="text/css"></style></head>
-  <body>
+  <style type="text/css"></style><style id="holderjs-style" type="text/css">.holderjs-fluid {font-size:16px;font-weight:bold;text-align:center;font-family:sans-serif;margin:0}</style></head>
+  <body style="">
     <a class="sr-only" href="#content">Skip navigation</a>
 
     
@@ -52,7 +52,7 @@ pre code { background: transparent; }
     </div>
     <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
       <ul class="nav navbar-nav">
-       <li >
+        <li>
           <a href="起步.html">起步</a>
         </li>
         <li>
@@ -64,9 +64,7 @@ pre code { background: transparent; }
         <li>
           <a href="js.html">JavaScript插件</a>
         </li>
-		<li>
-          <a href="http://www.tianfutv.net">关于文档</a>
-        </li>
+       
       </ul>
     </nav>
   </div>
@@ -88,7 +86,7 @@ pre code { background: transparent; }
     <div class="container bs-docs-container">
       <div class="row">
         <div class="col-md-3">
-          <div class="bs-sidebar hidden-print" role="complementary">
+          <div class="bs-sidebar hidden-print affix-top" role="complementary">
             <ul class="nav bs-sidenav">
                       
                 <li>
@@ -453,7 +451,7 @@ pre code { background: transparent; }
     <h2 id="glyphicons-how-to-use">如何使用</h2>
     <p>出于性能的考虑，所有图标都需要基类和单独的图标类。把下面的代码放 在任何地方都能使用。为了留下正确的内补（padding），一定要在图标和文本之间加上一个空格。</p>
 <div class="highlight">
-<pre><code class="language-html">&lt;span class="glyphicon glyphicon-search"&gt;&lt;/span&gt;</code></pre>
+<pre><code class="language-html xml"><span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"glyphicon glyphicon-search"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span></code></pre>
 
 </div>
 
@@ -477,9 +475,9 @@ pre code { background: transparent; }
       </div>
     </div>
 <div class="highlight">
-<pre><code class="language-html">&lt;button type="button" class="btn btn-default btn-lg"&gt;
-  &lt;span class="glyphicon glyphicon-star"&gt;&lt;/span&gt; Star
-&lt;/button&gt;</code></pre>
+<pre><code class="language-html xml"><span class="tag">&lt;<span class="title">button</span> <span class="attribute">type</span>=<span class="value">"button"</span> <span class="attribute">class</span>=<span class="value">"btn btn-default btn-lg"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"glyphicon glyphicon-star"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span> Star
+<span class="tag">&lt;/<span class="title">button</span>&gt;</span></code></pre>
 
 </div>
 
@@ -511,28 +509,28 @@ pre code { background: transparent; }
       </div>
     </div>
 <div class="highlight">
-<pre><code class="language-html">&lt;div class="dropdown"&gt;
-  &lt;button class="btn dropdown-toggle sr-only" type="button" id="dropdownMenu1" data-toggle="dropdown"&gt;
+<pre><code class="language-html xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"dropdown"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">button</span> <span class="attribute">class</span>=<span class="value">"btn dropdown-toggle sr-only"</span> <span class="attribute">type</span>=<span class="value">"button"</span> <span class="attribute">id</span>=<span class="value">"dropdownMenu1"</span> <span class="attribute">data-toggle</span>=<span class="value">"dropdown"</span>&gt;</span>
     Dropdown
-    &lt;span class="caret"&gt;&lt;/span&gt;
-  &lt;/button&gt;
-  &lt;ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1"&gt;
-    &lt;li role="presentation"&gt;&lt;a role="menuitem" tabindex="-1" href="#"&gt;Action&lt;/a&gt;&lt;/li&gt;
-    &lt;li role="presentation"&gt;&lt;a role="menuitem" tabindex="-1" href="#"&gt;Another action&lt;/a&gt;&lt;/li&gt;
-    &lt;li role="presentation"&gt;&lt;a role="menuitem" tabindex="-1" href="#"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
-    &lt;li role="presentation" class="divider"&gt;&lt;/li&gt;
-    &lt;li role="presentation"&gt;&lt;a role="menuitem" tabindex="-1" href="#"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/div&gt;</code></pre>
+    <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"caret"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"dropdown-menu"</span> <span class="attribute">role</span>=<span class="value">"menu"</span> <span class="attribute">aria-labelledby</span>=<span class="value">"dropdownMenu1"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">role</span>=<span class="value">"presentation"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">role</span>=<span class="value">"menuitem"</span> <span class="attribute">tabindex</span>=<span class="value">"-1"</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Action<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">role</span>=<span class="value">"presentation"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">role</span>=<span class="value">"menuitem"</span> <span class="attribute">tabindex</span>=<span class="value">"-1"</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Another action<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">role</span>=<span class="value">"presentation"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">role</span>=<span class="value">"menuitem"</span> <span class="attribute">tabindex</span>=<span class="value">"-1"</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Something else here<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">role</span>=<span class="value">"presentation"</span> <span class="attribute">class</span>=<span class="value">"divider"</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">role</span>=<span class="value">"presentation"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">role</span>=<span class="value">"menuitem"</span> <span class="attribute">tabindex</span>=<span class="value">"-1"</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Separated link<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
 
 </div>
 
     <h3 id="dropdowns-alignment">对齐选项</h3>
     <p>给下拉菜单<code>.dropdown-menu</code>加上<code>.pull-right</code> 使文字右对齐。</p>
 <div class="highlight">
-<pre><code class="language-html">&lt;ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dLabel"&gt;
+<pre><code class="language-html xml"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"dropdown-menu pull-right"</span> <span class="attribute">role</span>=<span class="value">"menu"</span> <span class="attribute">aria-labelledby</span>=<span class="value">"dLabel"</span>&gt;</span>
   ...
-&lt;/ul&gt;</code></pre>
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span></code></pre>
 
 </div>
 
@@ -556,13 +554,13 @@ pre code { background: transparent; }
       </div>
     </div>
 <div class="highlight">
-<pre><code class="language-html">&lt;ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2"&gt;
-  &lt;li role="presentation" class="dropdown-header"&gt;Dropdown header&lt;/li&gt;
+<pre><code class="language-html xml"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"dropdown-menu"</span> <span class="attribute">role</span>=<span class="value">"menu"</span> <span class="attribute">aria-labelledby</span>=<span class="value">"dropdownMenu2"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span> <span class="attribute">role</span>=<span class="value">"presentation"</span> <span class="attribute">class</span>=<span class="value">"dropdown-header"</span>&gt;</span>Dropdown header<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
   ...
-  &lt;li role="presentation" class="divider"&gt;&lt;/li&gt;
-  &lt;li role="presentation" class="dropdown-header"&gt;Dropdown header&lt;/li&gt;
+  <span class="tag">&lt;<span class="title">li</span> <span class="attribute">role</span>=<span class="value">"presentation"</span> <span class="attribute">class</span>=<span class="value">"divider"</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span> <span class="attribute">role</span>=<span class="value">"presentation"</span> <span class="attribute">class</span>=<span class="value">"dropdown-header"</span>&gt;</span>Dropdown header<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
   ...
-&lt;/ul&gt;</code></pre>
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span></code></pre>
 
 </div>
 
@@ -582,11 +580,11 @@ pre code { background: transparent; }
       </div>
     </div>
 <div class="highlight">
-<pre><code class="language-html">&lt;ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu3"&gt;
-  &lt;li role="presentation"&gt;&lt;a role="menuitem" tabindex="-1" href="#"&gt;Regular link&lt;/a&gt;&lt;/li&gt;
-  &lt;li role="presentation" class="disabled"&gt;&lt;a role="menuitem" tabindex="-1" href="#"&gt;Disabled link&lt;/a&gt;&lt;/li&gt;
-  &lt;li role="presentation"&gt;&lt;a role="menuitem" tabindex="-1" href="#"&gt;Another link&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
+<pre><code class="language-html xml"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"dropdown-menu"</span> <span class="attribute">role</span>=<span class="value">"menu"</span> <span class="attribute">aria-labelledby</span>=<span class="value">"dropdownMenu3"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span> <span class="attribute">role</span>=<span class="value">"presentation"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">role</span>=<span class="value">"menuitem"</span> <span class="attribute">tabindex</span>=<span class="value">"-1"</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Regular link<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span> <span class="attribute">role</span>=<span class="value">"presentation"</span> <span class="attribute">class</span>=<span class="value">"disabled"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">role</span>=<span class="value">"menuitem"</span> <span class="attribute">tabindex</span>=<span class="value">"-1"</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Disabled link<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span> <span class="attribute">role</span>=<span class="value">"presentation"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">role</span>=<span class="value">"menuitem"</span> <span class="attribute">tabindex</span>=<span class="value">"-1"</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Another link<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span></code></pre>
 
 </div>
   </div>
@@ -615,11 +613,11 @@ pre code { background: transparent; }
       </div>
     </div>
 <div class="highlight">
-<pre><code class="language-html">&lt;div class="btn-group"&gt;
-  &lt;button type="button" class="btn btn-default"&gt;Left&lt;/button&gt;
-  &lt;button type="button" class="btn btn-default"&gt;Middle&lt;/button&gt;
-  &lt;button type="button" class="btn btn-default"&gt;Right&lt;/button&gt;
-&lt;/div&gt;</code></pre>
+<pre><code class="language-html xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"btn-group"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">button</span> <span class="attribute">type</span>=<span class="value">"button"</span> <span class="attribute">class</span>=<span class="value">"btn btn-default"</span>&gt;</span>Left<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">button</span> <span class="attribute">type</span>=<span class="value">"button"</span> <span class="attribute">class</span>=<span class="value">"btn btn-default"</span>&gt;</span>Middle<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">button</span> <span class="attribute">type</span>=<span class="value">"button"</span> <span class="attribute">class</span>=<span class="value">"btn btn-default"</span>&gt;</span>Right<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
 
 </div>
 
@@ -644,11 +642,11 @@ pre code { background: transparent; }
       </div>
     </div>
 <div class="highlight">
-<pre><code class="language-html">&lt;div class="btn-toolbar" role="toolbar"&gt;
-  &lt;div class="btn-group"&gt;...&lt;/div&gt;
-  &lt;div class="btn-group"&gt;...&lt;/div&gt;
-  &lt;div class="btn-group"&gt;...&lt;/div&gt;
-&lt;/div&gt;</code></pre>
+<pre><code class="language-html xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"btn-toolbar"</span> <span class="attribute">role</span>=<span class="value">"toolbar"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"btn-group"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"btn-group"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"btn-group"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
 
 </div>
 
@@ -685,10 +683,10 @@ pre code { background: transparent; }
       </div>
     </div>
 <div class="highlight">
-<pre><code class="language-html">&lt;div class="btn-group btn-group-lg"&gt;...&lt;/div&gt;
-&lt;div class="btn-group"&gt;...&lt;/div&gt;
-&lt;div class="btn-group btn-group-sm"&gt;...&lt;/div&gt;
-&lt;div class="btn-group btn-group-xs"&gt;...&lt;/div&gt;</code></pre>
+<pre><code class="language-html r">&lt;div class=<span class="string">"btn-group btn-group-lg"</span>&gt;<span class="keyword">...</span>&lt;/div&gt;
+&lt;div class=<span class="string">"btn-group"</span>&gt;<span class="keyword">...</span>&lt;/div&gt;
+&lt;div class=<span class="string">"btn-group btn-group-sm"</span>&gt;<span class="keyword">...</span>&lt;/div&gt;
+&lt;div class=<span class="string">"btn-group btn-group-xs"</span>&gt;<span class="keyword">...</span>&lt;/div&gt;</code></pre>
 
 </div>
 
@@ -712,21 +710,21 @@ pre code { background: transparent; }
       </div>
     </div>
 <div class="highlight">
-<pre><code class="language-html">&lt;div class="btn-group"&gt;
-  &lt;button type="button" class="btn btn-default"&gt;1&lt;/button&gt;
-  &lt;button type="button" class="btn btn-default"&gt;2&lt;/button&gt;
+<pre><code class="language-html xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"btn-group"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">button</span> <span class="attribute">type</span>=<span class="value">"button"</span> <span class="attribute">class</span>=<span class="value">"btn btn-default"</span>&gt;</span>1<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">button</span> <span class="attribute">type</span>=<span class="value">"button"</span> <span class="attribute">class</span>=<span class="value">"btn btn-default"</span>&gt;</span>2<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
 
-  &lt;div class="btn-group"&gt;
-    &lt;button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"&gt;
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"btn-group"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">button</span> <span class="attribute">type</span>=<span class="value">"button"</span> <span class="attribute">class</span>=<span class="value">"btn btn-default dropdown-toggle"</span> <span class="attribute">data-toggle</span>=<span class="value">"dropdown"</span>&gt;</span>
       Dropdown
-      &lt;span class="caret"&gt;&lt;/span&gt;
-    &lt;/button&gt;
-    &lt;ul class="dropdown-menu"&gt;
-      &lt;li&gt;&lt;a href="#"&gt;Dropdown link&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href="#"&gt;Dropdown link&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
+      <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"caret"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"dropdown-menu"</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Dropdown link<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Dropdown link<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
 
 </div>
 
@@ -781,8 +779,8 @@ pre code { background: transparent; }
       </div>
     </div>
 <div class="highlight">
-<pre><code class="language-html">&lt;div class="btn-group-vertical"&gt;
-  ...
+<pre><code class="language-html r">&lt;div class=<span class="string">"btn-group-vertical"</span>&gt;
+  <span class="keyword">...</span>
 &lt;/div&gt;</code></pre>
 
 </div>
@@ -803,8 +801,8 @@ pre code { background: transparent; }
       </div>
     </div>
 <div class="highlight">
-<pre><code class="language-html">&lt;div class="btn-group btn-group-justified"&gt;
-  ...
+<pre><code class="language-html r">&lt;div class=<span class="string">"btn-group btn-group-justified"</span>&gt;
+  <span class="keyword">...</span>
 &lt;/div&gt;</code></pre>
 
 </div>
@@ -890,19 +888,19 @@ pre code { background: transparent; }
       </div>
     </div>
 <div class="highlight">
-<pre><code class="language-html">&lt;!-- Single button --&gt;
-&lt;div class="btn-group"&gt;
-  &lt;button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"&gt;
-    Action &lt;span class="caret"&gt;&lt;/span&gt;
-  &lt;/button&gt;
-  &lt;ul class="dropdown-menu" role="menu"&gt;
-    &lt;li&gt;&lt;a href="#"&gt;Action&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="#"&gt;Another action&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="#"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
-    &lt;li class="divider"&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="#"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/div&gt;</code></pre>
+<pre><code class="language-html xml"><span class="comment">&lt;!-- Single button --&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"btn-group"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">button</span> <span class="attribute">type</span>=<span class="value">"button"</span> <span class="attribute">class</span>=<span class="value">"btn btn-default dropdown-toggle"</span> <span class="attribute">data-toggle</span>=<span class="value">"dropdown"</span>&gt;</span>
+    Action <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"caret"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"dropdown-menu"</span> <span class="attribute">role</span>=<span class="value">"menu"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Action<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Another action<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Something else here<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"divider"</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Separated link<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
 
 </div>
 
@@ -995,21 +993,21 @@ pre code { background: transparent; }
       </div>
     </div>
 <div class="highlight">
-<pre><code class="language-html">&lt;!-- Split button --&gt;
-&lt;div class="btn-group"&gt;
-  &lt;button type="button" class="btn btn-danger"&gt;Action&lt;/button&gt;
-  &lt;button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown"&gt;
-    &lt;span class="caret"&gt;&lt;/span&gt;
-    &lt;span class="sr-only"&gt;Toggle Dropdown&lt;/span&gt;
-  &lt;/button&gt;
-  &lt;ul class="dropdown-menu" role="menu"&gt;
-    &lt;li&gt;&lt;a href="#"&gt;Action&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="#"&gt;Another action&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="#"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
-    &lt;li class="divider"&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="#"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/div&gt;</code></pre>
+<pre><code class="language-html xml"><span class="comment">&lt;!-- Split button --&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"btn-group"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">button</span> <span class="attribute">type</span>=<span class="value">"button"</span> <span class="attribute">class</span>=<span class="value">"btn btn-danger"</span>&gt;</span>Action<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">button</span> <span class="attribute">type</span>=<span class="value">"button"</span> <span class="attribute">class</span>=<span class="value">"btn btn-danger dropdown-toggle"</span> <span class="attribute">data-toggle</span>=<span class="value">"dropdown"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"caret"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"sr-only"</span>&gt;</span>Toggle Dropdown<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"dropdown-menu"</span> <span class="attribute">role</span>=<span class="value">"menu"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Action<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Another action<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Something else here<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"divider"</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Separated link<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
 
 </div>
 
@@ -1060,35 +1058,35 @@ pre code { background: transparent; }
       </div>
     </div>
 <div class="highlight">
-<pre><code class="language-html">&lt;!-- Large button group --&gt;
-&lt;div class="btn-group"&gt;
-  &lt;button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown"&gt;
-    Large button &lt;span class="caret"&gt;&lt;/span&gt;
-  &lt;/button&gt;
-  &lt;ul class="dropdown-menu"&gt;
+<pre><code class="language-html xml"><span class="comment">&lt;!-- Large button group --&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"btn-group"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">button</span> <span class="attribute">class</span>=<span class="value">"btn btn-default btn-lg dropdown-toggle"</span> <span class="attribute">type</span>=<span class="value">"button"</span> <span class="attribute">data-toggle</span>=<span class="value">"dropdown"</span>&gt;</span>
+    Large button <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"caret"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"dropdown-menu"</span>&gt;</span>
     ...
-  &lt;/ul&gt;
-&lt;/div&gt;
+  <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
 
-&lt;!-- Small button group --&gt;
-&lt;div class="btn-group"&gt;
-  &lt;button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown"&gt;
-    Small button &lt;span class="caret"&gt;&lt;/span&gt;
-  &lt;/button&gt;
-  &lt;ul class="dropdown-menu"&gt;
+<span class="comment">&lt;!-- Small button group --&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"btn-group"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">button</span> <span class="attribute">class</span>=<span class="value">"btn btn-default btn-sm dropdown-toggle"</span> <span class="attribute">type</span>=<span class="value">"button"</span> <span class="attribute">data-toggle</span>=<span class="value">"dropdown"</span>&gt;</span>
+    Small button <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"caret"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"dropdown-menu"</span>&gt;</span>
     ...
-  &lt;/ul&gt;
-&lt;/div&gt;
+  <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
 
-&lt;!-- Extra small button group --&gt;
-&lt;div class="btn-group"&gt;
-  &lt;button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown"&gt;
-    Extra small button &lt;span class="caret"&gt;&lt;/span&gt;
-  &lt;/button&gt;
-  &lt;ul class="dropdown-menu"&gt;
+<span class="comment">&lt;!-- Extra small button group --&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"btn-group"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">button</span> <span class="attribute">class</span>=<span class="value">"btn btn-default btn-xs dropdown-toggle"</span> <span class="attribute">type</span>=<span class="value">"button"</span> <span class="attribute">data-toggle</span>=<span class="value">"dropdown"</span>&gt;</span>
+    Extra small button <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"caret"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"dropdown-menu"</span>&gt;</span>
     ...
-  &lt;/ul&gt;
-&lt;/div&gt;</code></pre>
+  <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
 
 </div>
 
@@ -1127,16 +1125,16 @@ pre code { background: transparent; }
       </div>
     </div>
 <div class="highlight">
-<pre><code class="language-html">&lt;div class="btn-group dropup"&gt;
-  &lt;button type="button" class="btn btn-default"&gt;Dropup&lt;/button&gt;
-  &lt;button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"&gt;
-    &lt;span class="caret"&gt;&lt;/span&gt;
-    &lt;span class="sr-only"&gt;Toggle Dropdown&lt;/span&gt;
-  &lt;/button&gt;
-  &lt;ul class="dropdown-menu"&gt;
-    &lt;!-- Dropdown menu links --&gt;
-  &lt;/ul&gt;
-&lt;/div&gt;</code></pre>
+<pre><code class="language-html xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"btn-group dropup"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">button</span> <span class="attribute">type</span>=<span class="value">"button"</span> <span class="attribute">class</span>=<span class="value">"btn btn-default"</span>&gt;</span>Dropup<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">button</span> <span class="attribute">type</span>=<span class="value">"button"</span> <span class="attribute">class</span>=<span class="value">"btn btn-default dropdown-toggle"</span> <span class="attribute">data-toggle</span>=<span class="value">"dropdown"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"caret"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"sr-only"</span>&gt;</span>Toggle Dropdown<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"dropdown-menu"</span>&gt;</span>
+    <span class="comment">&lt;!-- Dropdown menu links --&gt;</span>
+  <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
 
 </div>
 
@@ -1180,21 +1178,21 @@ pre code { background: transparent; }
       </div>
     </form>
 <div class="highlight">
-<pre><code class="language-html">&lt;div class="input-group"&gt;
-  &lt;span class="input-group-addon"&gt;@&lt;/span&gt;
-  &lt;input type="text" class="form-control" placeholder="Username"&gt;
-&lt;/div&gt;
+<pre><code class="language-html xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"input-group"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"input-group-addon"</span>&gt;</span>@<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"text"</span> <span class="attribute">class</span>=<span class="value">"form-control"</span> <span class="attribute">placeholder</span>=<span class="value">"Username"</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
 
-&lt;div class="input-group"&gt;
-  &lt;input type="text" class="form-control"&gt;
-  &lt;span class="input-group-addon"&gt;.00&lt;/span&gt;
-&lt;/div&gt;
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"input-group"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"text"</span> <span class="attribute">class</span>=<span class="value">"form-control"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"input-group-addon"</span>&gt;</span>.00<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
 
-&lt;div class="input-group"&gt;
-  &lt;span class="input-group-addon"&gt;$&lt;/span&gt;
-  &lt;input type="text" class="form-control"&gt;
-  &lt;span class="input-group-addon"&gt;.00&lt;/span&gt;
-&lt;/div&gt;</code></pre>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"input-group"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"input-group-addon"</span>&gt;</span>$<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"text"</span> <span class="attribute">class</span>=<span class="value">"form-control"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"input-group-addon"</span>&gt;</span>.00<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
 
 </div>
 
@@ -1218,20 +1216,20 @@ pre code { background: transparent; }
       </div>
     </form>
 <div class="highlight">
-<pre><code class="language-html">&lt;div class="input-group input-group-lg"&gt;
-  &lt;span class="input-group-addon"&gt;@&lt;/span&gt;
-  &lt;input type="text" class="form-control input-lg" placeholder="Username"&gt;
-&lt;/div&gt;
+<pre><code class="language-html xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"input-group input-group-lg"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"input-group-addon"</span>&gt;</span>@<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"text"</span> <span class="attribute">class</span>=<span class="value">"form-control input-lg"</span> <span class="attribute">placeholder</span>=<span class="value">"Username"</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
 
-&lt;div class="input-group"&gt;
-  &lt;span class="input-group-addon"&gt;@&lt;/span&gt;
-  &lt;input type="text" class="form-control" placeholder="Username"&gt;
-&lt;/div&gt;
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"input-group"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"input-group-addon"</span>&gt;</span>@<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"text"</span> <span class="attribute">class</span>=<span class="value">"form-control"</span> <span class="attribute">placeholder</span>=<span class="value">"Username"</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
 
-&lt;div class="input-group input-group-sm"&gt;
-  &lt;span class="input-group-addon"&gt;@&lt;/span&gt;
-  &lt;input type="text" class="form-control" placeholder="Username"&gt;
-&lt;/div&gt;</code></pre>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"input-group input-group-sm"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"input-group-addon"</span>&gt;</span>@<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"text"</span> <span class="attribute">class</span>=<span class="value">"form-control"</span> <span class="attribute">placeholder</span>=<span class="value">"Username"</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
 
 </div>
 
@@ -1259,24 +1257,24 @@ pre code { background: transparent; }
       </div>
     </form>
 <div class="highlight">
-<pre><code class="language-html">&lt;div class="row"&gt;
-  &lt;div class="col-lg-6"&gt;
-    &lt;div class="input-group"&gt;
-      &lt;span class="input-group-addon"&gt;
-        &lt;input type="checkbox"&gt;
-      &lt;/span&gt;
-      &lt;input type="text" class="form-control"&gt;
-    &lt;/div&gt;&lt;!-- /input-group --&gt;
-  &lt;/div&gt;&lt;!-- /.col-lg-6 --&gt;
-  &lt;div class="col-lg-6"&gt;
-    &lt;div class="input-group"&gt;
-      &lt;span class="input-group-addon"&gt;
-        &lt;input type="radio"&gt;
-      &lt;/span&gt;
-      &lt;input type="text" class="form-control"&gt;
-    &lt;/div&gt;&lt;!-- /input-group --&gt;
-  &lt;/div&gt;&lt;!-- /.col-lg-6 --&gt;
-&lt;/div&gt;&lt;!-- /.row --&gt;</code></pre>
+<pre><code class="language-html xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"row"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"col-lg-6"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"input-group"</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"input-group-addon"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"checkbox"</span>&gt;</span>
+      <span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"text"</span> <span class="attribute">class</span>=<span class="value">"form-control"</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span><span class="comment">&lt;!-- /input-group --&gt;</span>
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span><span class="comment">&lt;!-- /.col-lg-6 --&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"col-lg-6"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"input-group"</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"input-group-addon"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"radio"</span>&gt;</span>
+      <span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"text"</span> <span class="attribute">class</span>=<span class="value">"form-control"</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span><span class="comment">&lt;!-- /input-group --&gt;</span>
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span><span class="comment">&lt;!-- /.col-lg-6 --&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span><span class="comment">&lt;!-- /.row --&gt;</span></code></pre>
 
 </div>
 
@@ -1304,24 +1302,24 @@ pre code { background: transparent; }
       </div>
     </form>
 <div class="highlight">
-<pre><code class="language-html">&lt;div class="row"&gt;
-  &lt;div class="col-lg-6"&gt;
-    &lt;div class="input-group"&gt;
-      &lt;span class="input-group-btn"&gt;
-        &lt;button class="btn btn-default" type="button"&gt;Go!&lt;/button&gt;
-      &lt;/span&gt;
-      &lt;input type="text" class="form-control"&gt;
-    &lt;/div&gt;&lt;!-- /input-group --&gt;
-  &lt;/div&gt;&lt;!-- /.col-lg-6 --&gt;
-  &lt;div class="col-lg-6"&gt;
-    &lt;div class="input-group"&gt;
-      &lt;input type="text" class="form-control"&gt;
-      &lt;span class="input-group-btn"&gt;
-        &lt;button class="btn btn-default" type="button"&gt;Go!&lt;/button&gt;
-      &lt;/span&gt;
-    &lt;/div&gt;&lt;!-- /input-group --&gt;
-  &lt;/div&gt;&lt;!-- /.col-lg-6 --&gt;
-&lt;/div&gt;&lt;!-- /.row --&gt;</code></pre>
+<pre><code class="language-html xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"row"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"col-lg-6"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"input-group"</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"input-group-btn"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">button</span> <span class="attribute">class</span>=<span class="value">"btn btn-default"</span> <span class="attribute">type</span>=<span class="value">"button"</span>&gt;</span>Go!<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+      <span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"text"</span> <span class="attribute">class</span>=<span class="value">"form-control"</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span><span class="comment">&lt;!-- /input-group --&gt;</span>
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span><span class="comment">&lt;!-- /.col-lg-6 --&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"col-lg-6"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"input-group"</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"text"</span> <span class="attribute">class</span>=<span class="value">"form-control"</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"input-group-btn"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">button</span> <span class="attribute">class</span>=<span class="value">"btn btn-default"</span> <span class="attribute">type</span>=<span class="value">"button"</span>&gt;</span>Go!<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+      <span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span><span class="comment">&lt;!-- /input-group --&gt;</span>
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span><span class="comment">&lt;!-- /.col-lg-6 --&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span><span class="comment">&lt;!-- /.row --&gt;</span></code></pre>
 
 </div>
 
@@ -1362,38 +1360,38 @@ pre code { background: transparent; }
       </div>
     </form>
 <div class="highlight">
-<pre><code class="language-html">&lt;div class="row"&gt;
-  &lt;div class="col-lg-6"&gt;
-    &lt;div class="input-group"&gt;
-      &lt;div class="input-group-btn"&gt;
-        &lt;button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"&gt;Action &lt;span class="caret"&gt;&lt;/span&gt;&lt;/button&gt;
-        &lt;ul class="dropdown-menu"&gt;
-          &lt;li&gt;&lt;a href="#"&gt;Action&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href="#"&gt;Another action&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href="#"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
-          &lt;li class="divider"&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href="#"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/div&gt;&lt;!-- /btn-group --&gt;
-      &lt;input type="text" class="form-control"&gt;
-    &lt;/div&gt;&lt;!-- /input-group --&gt;
-  &lt;/div&gt;&lt;!-- /.col-lg-6 --&gt;
-  &lt;div class="col-lg-6"&gt;
-    &lt;div class="input-group"&gt;
-      &lt;input type="text" class="form-control"&gt;
-      &lt;div class="input-group-btn"&gt;
-        &lt;button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"&gt;Action &lt;span class="caret"&gt;&lt;/span&gt;&lt;/button&gt;
-        &lt;ul class="dropdown-menu pull-right"&gt;
-          &lt;li&gt;&lt;a href="#"&gt;Action&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href="#"&gt;Another action&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href="#"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
-          &lt;li class="divider"&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href="#"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/div&gt;&lt;!-- /btn-group --&gt;
-    &lt;/div&gt;&lt;!-- /input-group --&gt;
-  &lt;/div&gt;&lt;!-- /.col-lg-6 --&gt;
-&lt;/div&gt;&lt;!-- /.row --&gt;</code></pre>
+<pre><code class="language-html xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"row"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"col-lg-6"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"input-group"</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"input-group-btn"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">button</span> <span class="attribute">type</span>=<span class="value">"button"</span> <span class="attribute">class</span>=<span class="value">"btn btn-default dropdown-toggle"</span> <span class="attribute">data-toggle</span>=<span class="value">"dropdown"</span>&gt;</span>Action <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"caret"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"dropdown-menu"</span>&gt;</span>
+          <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Action<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+          <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Another action<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+          <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Something else here<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+          <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"divider"</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+          <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Separated link<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+      <span class="tag">&lt;/<span class="title">div</span>&gt;</span><span class="comment">&lt;!-- /btn-group --&gt;</span>
+      <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"text"</span> <span class="attribute">class</span>=<span class="value">"form-control"</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span><span class="comment">&lt;!-- /input-group --&gt;</span>
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span><span class="comment">&lt;!-- /.col-lg-6 --&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"col-lg-6"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"input-group"</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"text"</span> <span class="attribute">class</span>=<span class="value">"form-control"</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"input-group-btn"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">button</span> <span class="attribute">type</span>=<span class="value">"button"</span> <span class="attribute">class</span>=<span class="value">"btn btn-default dropdown-toggle"</span> <span class="attribute">data-toggle</span>=<span class="value">"dropdown"</span>&gt;</span>Action <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"caret"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"dropdown-menu pull-right"</span>&gt;</span>
+          <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Action<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+          <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Another action<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+          <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Something else here<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+          <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"divider"</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+          <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Separated link<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+      <span class="tag">&lt;/<span class="title">div</span>&gt;</span><span class="comment">&lt;!-- /btn-group --&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span><span class="comment">&lt;!-- /input-group --&gt;</span>
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span><span class="comment">&lt;!-- /.col-lg-6 --&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span><span class="comment">&lt;!-- /.row --&gt;</span></code></pre>
 
 </div>
 
@@ -1441,19 +1439,19 @@ pre code { background: transparent; }
       </div>
     </form>
 <div class="highlight">
-<pre><code class="language-html">&lt;div class="input-group"&gt;
-  &lt;div class="input-group-btn"&gt;
-    &lt;!-- Button and dropdown menu --&gt;
-  &lt;/div&gt;
-  &lt;input type="text" class="form-control"&gt;
-&lt;/div&gt;
+<pre><code class="language-html xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"input-group"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"input-group-btn"</span>&gt;</span>
+    <span class="comment">&lt;!-- Button and dropdown menu --&gt;</span>
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"text"</span> <span class="attribute">class</span>=<span class="value">"form-control"</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
 
-&lt;div class="input-group"&gt;
-  &lt;input type="text" class="form-control"&gt;
-  &lt;div class="input-group-btn"&gt;
-    &lt;!-- Button and dropdown menu --&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"input-group"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"text"</span> <span class="attribute">class</span>=<span class="value">"form-control"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"input-group-btn"</span>&gt;</span>
+    <span class="comment">&lt;!-- Button and dropdown menu --&gt;</span>
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
 
 </div>
 
@@ -1479,11 +1477,11 @@ pre code { background: transparent; }
       </ul>
     </div>
 <div class="highlight">
-<pre><code class="language-html">&lt;ul class="nav nav-tabs"&gt;
-  &lt;li class="active"&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#"&gt;Profile&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#"&gt;Messages&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
+<pre><code class="language-html xml"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"nav nav-tabs"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"active"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Home<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Profile<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Messages<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span></code></pre>
 
 </div>
     <div class="bs-callout bs-callout-info">
@@ -1500,11 +1498,11 @@ pre code { background: transparent; }
       </ul>
     </div>
 <div class="highlight">
-<pre><code class="language-html">&lt;ul class="nav nav-pills"&gt;
-  &lt;li class="active"&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#"&gt;Profile&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#"&gt;Messages&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
+<pre><code class="language-html xml"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"nav nav-pills"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"active"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Home<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Profile<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Messages<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span></code></pre>
 
 </div>
     <p>Pills 可以竖直堆叠。只要加上<code>.nav-stacked</code>。</p>
@@ -1516,8 +1514,8 @@ pre code { background: transparent; }
       </ul>
     </div>
 <div class="highlight">
-<pre><code class="language-html">&lt;ul class="nav nav-pills nav-stacked"&gt;
-  ...
+<pre><code class="language-html r">&lt;ul class=<span class="string">"nav nav-pills nav-stacked"</span>&gt;
+  <span class="keyword">...</span>
 &lt;/ul&gt;</code></pre>
 
 </div>
@@ -1543,11 +1541,11 @@ pre code { background: transparent; }
       </ul>
     </div>
 <div class="highlight">
-<pre><code class="language-html">&lt;ul class="nav nav-tabs nav-justified"&gt;
-  ...
+<pre><code class="language-html r">&lt;ul class=<span class="string">"nav nav-tabs nav-justified"</span>&gt;
+  <span class="keyword">...</span>
 &lt;/ul&gt;
-&lt;ul class="nav nav-pills nav-justified"&gt;
-  ...
+&lt;ul class=<span class="string">"nav nav-pills nav-justified"</span>&gt;
+  <span class="keyword">...</span>
 &lt;/ul&gt;</code></pre>
 
 </div>
@@ -1569,11 +1567,11 @@ pre code { background: transparent; }
       </ul>
     </div>
 <div class="highlight">
-<pre><code class="language-html">&lt;ul class="nav nav-pills"&gt;
+<pre><code class="language-html xml"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"nav nav-pills"</span>&gt;</span>
   ...
-  &lt;li class="disabled"&gt;&lt;a href="#"&gt;Disabled link&lt;/a&gt;&lt;/li&gt;
+  <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"disabled"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Disabled link<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
   ...
-&lt;/ul&gt;</code></pre>
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span></code></pre>
 
 </div>
 
@@ -1601,18 +1599,18 @@ pre code { background: transparent; }
   </ul>
     </div>
 <div class="highlight">
-<pre><code class="language-html">&lt;ul class="nav nav-tabs"&gt;
+<pre><code class="language-html xml"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"nav nav-tabs"</span>&gt;</span>
   ...
-  &lt;li class="dropdown"&gt;
-    &lt;a class="dropdown-toggle" data-toggle="dropdown" href="#"&gt;
-      Dropdown &lt;span class="caret"&gt;&lt;/span&gt;
-    &lt;/a&gt;
-    &lt;ul class="dropdown-menu"&gt;
+  <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"dropdown"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">a</span> <span class="attribute">class</span>=<span class="value">"dropdown-toggle"</span> <span class="attribute">data-toggle</span>=<span class="value">"dropdown"</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>
+      Dropdown <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"caret"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"dropdown-menu"</span>&gt;</span>
       ...
-    &lt;/ul&gt;
-  &lt;/li&gt;
+    <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
   ...
-&lt;/ul&gt;</code></pre>
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span></code></pre>
 
 </div>
 
@@ -1636,18 +1634,18 @@ pre code { background: transparent; }
       </ul>
     </div>
 <div class="highlight">
-<pre><code class="language-html">&lt;ul class="nav nav-pills"&gt;
+<pre><code class="language-html xml"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"nav nav-pills"</span>&gt;</span>
   ...
-  &lt;li class="dropdown"&gt;
-    &lt;a class="dropdown-toggle" data-toggle="dropdown" href="#"&gt;
-      Dropdown &lt;span class="caret"&gt;&lt;/span&gt;
-    &lt;/a&gt;
-    &lt;ul class="dropdown-menu"&gt;
+  <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"dropdown"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">a</span> <span class="attribute">class</span>=<span class="value">"dropdown-toggle"</span> <span class="attribute">data-toggle</span>=<span class="value">"dropdown"</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>
+      Dropdown <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"caret"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"dropdown-menu"</span>&gt;</span>
       ...
-    &lt;/ul&gt;
-  &lt;/li&gt;
+    <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
   ...
-&lt;/ul&gt;</code></pre>
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span></code></pre>
 
 </div>
 
@@ -1720,54 +1718,54 @@ pre code { background: transparent; }
       </nav>
     </div>
 <div class="highlight">
-<pre><code class="language-html">&lt;nav class="navbar navbar-default" role="navigation"&gt;
-  &lt;!-- Brand and toggle get grouped for better mobile display --&gt;
-  &lt;div class="navbar-header"&gt;
-    &lt;button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"&gt;
-      &lt;span class="sr-only"&gt;Toggle navigation&lt;/span&gt;
-      &lt;span class="icon-bar"&gt;&lt;/span&gt;
-      &lt;span class="icon-bar"&gt;&lt;/span&gt;
-      &lt;span class="icon-bar"&gt;&lt;/span&gt;
-    &lt;/button&gt;
-    &lt;a class="navbar-brand" href="#"&gt;Brand&lt;/a&gt;
-  &lt;/div&gt;
+<pre><code class="language-html xml"><span class="tag">&lt;<span class="title">nav</span> <span class="attribute">class</span>=<span class="value">"navbar navbar-default"</span> <span class="attribute">role</span>=<span class="value">"navigation"</span>&gt;</span>
+  <span class="comment">&lt;!-- Brand and toggle get grouped for better mobile display --&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"navbar-header"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">button</span> <span class="attribute">type</span>=<span class="value">"button"</span> <span class="attribute">class</span>=<span class="value">"navbar-toggle"</span> <span class="attribute">data-toggle</span>=<span class="value">"collapse"</span> <span class="attribute">data-target</span>=<span class="value">".navbar-ex1-collapse"</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"sr-only"</span>&gt;</span>Toggle navigation<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"icon-bar"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"icon-bar"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"icon-bar"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">a</span> <span class="attribute">class</span>=<span class="value">"navbar-brand"</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Brand<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
 
-  &lt;!-- Collect the nav links, forms, and other content for toggling --&gt;
-  &lt;div class="collapse navbar-collapse navbar-ex1-collapse"&gt;
-    &lt;ul class="nav navbar-nav"&gt;
-      &lt;li class="active"&gt;&lt;a href="#"&gt;Link&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href="#"&gt;Link&lt;/a&gt;&lt;/li&gt;
-      &lt;li class="dropdown"&gt;
-        &lt;a href="#" class="dropdown-toggle" data-toggle="dropdown"&gt;Dropdown &lt;b class="caret"&gt;&lt;/b&gt;&lt;/a&gt;
-        &lt;ul class="dropdown-menu"&gt;
-          &lt;li&gt;&lt;a href="#"&gt;Action&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href="#"&gt;Another action&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href="#"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href="#"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href="#"&gt;One more separated link&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-    &lt;form class="navbar-form navbar-left" role="search"&gt;
-      &lt;div class="form-group"&gt;
-        &lt;input type="text" class="form-control" placeholder="Search"&gt;
-      &lt;/div&gt;
-      &lt;button type="submit" class="btn btn-default"&gt;Submit&lt;/button&gt;
-    &lt;/form&gt;
-    &lt;ul class="nav navbar-nav navbar-right"&gt;
-      &lt;li&gt;&lt;a href="#"&gt;Link&lt;/a&gt;&lt;/li&gt;
-      &lt;li class="dropdown"&gt;
-        &lt;a href="#" class="dropdown-toggle" data-toggle="dropdown"&gt;Dropdown &lt;b class="caret"&gt;&lt;/b&gt;&lt;/a&gt;
-        &lt;ul class="dropdown-menu"&gt;
-          &lt;li&gt;&lt;a href="#"&gt;Action&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href="#"&gt;Another action&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href="#"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href="#"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/div&gt;&lt;!-- /.navbar-collapse --&gt;
-&lt;/nav&gt;</code></pre>
+  <span class="comment">&lt;!-- Collect the nav links, forms, and other content for toggling --&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"collapse navbar-collapse navbar-ex1-collapse"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"nav navbar-nav"</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"active"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Link<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Link<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"dropdown"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"dropdown-toggle"</span> <span class="attribute">data-toggle</span>=<span class="value">"dropdown"</span>&gt;</span>Dropdown <span class="tag">&lt;<span class="title">b</span> <span class="attribute">class</span>=<span class="value">"caret"</span>&gt;</span><span class="tag">&lt;/<span class="title">b</span>&gt;</span><span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"dropdown-menu"</span>&gt;</span>
+          <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Action<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+          <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Another action<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+          <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Something else here<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+          <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Separated link<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+          <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>One more separated link<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+      <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">form</span> <span class="attribute">class</span>=<span class="value">"navbar-form navbar-left"</span> <span class="attribute">role</span>=<span class="value">"search"</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"form-group"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"text"</span> <span class="attribute">class</span>=<span class="value">"form-control"</span> <span class="attribute">placeholder</span>=<span class="value">"Search"</span>&gt;</span>
+      <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">button</span> <span class="attribute">type</span>=<span class="value">"submit"</span> <span class="attribute">class</span>=<span class="value">"btn btn-default"</span>&gt;</span>Submit<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">form</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"nav navbar-nav navbar-right"</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Link<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"dropdown"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"dropdown-toggle"</span> <span class="attribute">data-toggle</span>=<span class="value">"dropdown"</span>&gt;</span>Dropdown <span class="tag">&lt;<span class="title">b</span> <span class="attribute">class</span>=<span class="value">"caret"</span>&gt;</span><span class="tag">&lt;/<span class="title">b</span>&gt;</span><span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"dropdown-menu"</span>&gt;</span>
+          <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Action<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+          <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Another action<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+          <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Something else here<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+          <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Separated link<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+      <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span><span class="comment">&lt;!-- /.navbar-collapse --&gt;</span>
+<span class="tag">&lt;/<span class="title">nav</span>&gt;</span></code></pre>
 
 </div>
 
@@ -1808,12 +1806,12 @@ pre code { background: transparent; }
       </nav>
     </div>
 <div class="highlight">
-<pre><code class="language-html">&lt;form class="navbar-form navbar-left" role="search"&gt;
-  &lt;div class="form-group"&gt;
-    &lt;input type="text" class="form-control" placeholder="Search"&gt;
-  &lt;/div&gt;
-  &lt;button type="submit" class="btn btn-default"&gt;Submit&lt;/button&gt;
-&lt;/form&gt;</code></pre>
+<pre><code class="language-html xml"><span class="tag">&lt;<span class="title">form</span> <span class="attribute">class</span>=<span class="value">"navbar-form navbar-left"</span> <span class="attribute">role</span>=<span class="value">"search"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"form-group"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"text"</span> <span class="attribute">class</span>=<span class="value">"form-control"</span> <span class="attribute">placeholder</span>=<span class="value">"Search"</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">button</span> <span class="attribute">type</span>=<span class="value">"submit"</span> <span class="attribute">class</span>=<span class="value">"btn btn-default"</span>&gt;</span>Submit<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">form</span>&gt;</span></code></pre>
 
 </div>
 
@@ -1837,7 +1835,7 @@ pre code { background: transparent; }
       </nav>
     </div>
 <div class="highlight">
-<pre><code class="language-html">&lt;button type="button" class="btn btn-default navbar-btn"&gt;Sign in&lt;/button&gt;</code></pre>
+<pre><code class="language-html xml"><span class="tag">&lt;<span class="title">button</span> <span class="attribute">type</span>=<span class="value">"button"</span> <span class="attribute">class</span>=<span class="value">"btn btn-default navbar-btn"</span>&gt;</span>Sign in<span class="tag">&lt;/<span class="title">button</span>&gt;</span></code></pre>
 
 </div>
 
@@ -1861,7 +1859,7 @@ pre code { background: transparent; }
       </nav>
     </div>
 <div class="highlight">
-<pre><code class="language-html">&lt;p class="navbar-text"&gt;Signed in as Mark Otto&lt;/p&gt;</code></pre>
+<pre><code class="language-html xml"><span class="tag">&lt;<span class="title">p</span> <span class="attribute">class</span>=<span class="value">"navbar-text"</span>&gt;</span>Signed in as Mark Otto<span class="tag">&lt;/<span class="title">p</span>&gt;</span></code></pre>
 
 </div>
 
@@ -1885,7 +1883,7 @@ pre code { background: transparent; }
       </nav>
     </div>
 <div class="highlight">
-<pre><code class="language-html">&lt;p class="navbar-text pull-right"&gt;Signed in as &lt;a href="#" class="navbar-link"&gt;Mark Otto&lt;/a&gt;&lt;/p&gt;</code></pre>
+<pre><code class="language-html xml"><span class="tag">&lt;<span class="title">p</span> <span class="attribute">class</span>=<span class="value">"navbar-text pull-right"</span>&gt;</span>Signed in as <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"navbar-link"</span>&gt;</span>Mark Otto<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">p</span>&gt;</span></code></pre>
 
 </div>
 
@@ -1921,9 +1919,9 @@ pre code { background: transparent; }
       </nav>
     </div>
 <div class="highlight">
-<pre><code class="language-html">&lt;nav class="navbar navbar-default navbar-fixed-top" role="navigation"&gt;
+<pre><code class="language-html xml"><span class="tag">&lt;<span class="title">nav</span> <span class="attribute">class</span>=<span class="value">"navbar navbar-default navbar-fixed-top"</span> <span class="attribute">role</span>=<span class="value">"navigation"</span>&gt;</span>
   ...
-&lt;/nav&gt;</code></pre>
+<span class="tag">&lt;/<span class="title">nav</span>&gt;</span></code></pre>
 
 </div>
 
@@ -1931,7 +1929,7 @@ pre code { background: transparent; }
       <h4>需要为body标签设置内补（padding）</h4>
       <p>这个固定的导航条会遮住页面上的其它内容，除非你给<code>&lt;body&gt;</code>的上方设置了<code>padding</code>。用你自己的值，或用下面给出的代码都可以。提示：导航条的默认高度是50px。</p>
 <div class="highlight">
-<pre><code class="language-css"><span class="tag">body</span> <span class="rules">{ <span class="rule"><span class="attribute">padding-top</span>:<span class="value"> <span class="number">70</span>px;</span></span> <span class="rule">}</span></span></code></pre>
+<pre><code class="language-css"><span class="tag"><span class="tag">body</span></span> <span class="rules"><span class="rules">{ <span class="rule"><span class="attribute"><span class="rule"><span class="attribute">padding-top</span></span></span><span class="rule">:<span class="value"><span class="value"> <span class="number"><span class="number">70</span></span>px;</span></span></span><span class="value"></span></span> <span class="rule"><span class="rule">}</span></span></span><span class="rule"></span></span></code></pre>
 
 </div>
       <p>一定要放在Bootstrap CSS的核心文件<strong>之后</strong>。</p>
@@ -1964,9 +1962,9 @@ pre code { background: transparent; }
       </nav>
     </div>
 <div class="highlight">
-<pre><code class="language-html">&lt;nav class="navbar navbar-default navbar-fixed-bottom" role="navigation"&gt;
+<pre><code class="language-html xml"><span class="tag">&lt;<span class="title">nav</span> <span class="attribute">class</span>=<span class="value">"navbar navbar-default navbar-fixed-bottom"</span> <span class="attribute">role</span>=<span class="value">"navigation"</span>&gt;</span>
   ...
-&lt;/nav&gt;</code></pre>
+<span class="tag">&lt;/<span class="title">nav</span>&gt;</span></code></pre>
 
 </div>
 
@@ -1974,7 +1972,7 @@ pre code { background: transparent; }
       <h4>需要为body标签设置内部（padding）</h4>
       <p>这个固定的导航条会遮住页面上的其它内容，除非你给<code>&lt;body&gt;</code>底部设置了<code>padding</code>。用你自己的值，或用下面给出的代码都可以。提示：导航条的默认高度是50px。</p>
 <div class="highlight">
-<pre><code class="language-css"><span class="tag">body</span> <span class="rules">{ <span class="rule"><span class="attribute">padding-bottom</span>:<span class="value"> <span class="number">70</span>px;</span></span> <span class="rule">}</span></span></code></pre>
+<pre><code class="language-css"><span class="tag"><span class="tag">body</span></span> <span class="rules"><span class="rules">{ <span class="rule"><span class="attribute"><span class="rule"><span class="attribute">padding-bottom</span></span></span><span class="rule">:<span class="value"><span class="value"> <span class="number"><span class="number">70</span></span>px;</span></span></span><span class="value"></span></span> <span class="rule"><span class="rule">}</span></span></span><span class="rule"></span></span></code></pre>
 
 </div>
       <p>一定要在加载Bootstrap CSS的核心<strong>后</strong>使用它。</p>
@@ -2007,9 +2005,9 @@ pre code { background: transparent; }
       </nav>
     </div>
 <div class="highlight">
-<pre><code class="language-html">&lt;nav class="navbar navbar-default navbar-static-top" role="navigation"&gt;
+<pre><code class="language-html xml"><span class="tag">&lt;<span class="title">nav</span> <span class="attribute">class</span>=<span class="value">"navbar navbar-default navbar-static-top"</span> <span class="attribute">role</span>=<span class="value">"navigation"</span>&gt;</span>
   ...
-&lt;/nav&gt;</code></pre>
+<span class="tag">&lt;/<span class="title">nav</span>&gt;</span></code></pre>
 
 </div>
 
@@ -2040,9 +2038,9 @@ pre code { background: transparent; }
       </nav>
     </div>
 <div class="highlight">
-<pre><code class="language-html">&lt;nav class="navbar navbar-inverse" role="navigation"&gt;
+<pre><code class="language-html xml"><span class="tag">&lt;<span class="title">nav</span> <span class="attribute">class</span>=<span class="value">"navbar navbar-inverse"</span> <span class="attribute">role</span>=<span class="value">"navigation"</span>&gt;</span>
   ...
-&lt;/nav&gt;</code></pre>
+<span class="tag">&lt;/<span class="title">nav</span>&gt;</span></code></pre>
 
 </div>
 
@@ -2050,4 +2048,1351 @@ pre code { background: transparent; }
 
 
 
-  </div></div></div></body></html>
+  
+  <div class="bs-docs-section">
+    <div class="page-header">
+     <h1 id="breadcrumbs">面包屑导航</h1>
+    </div>
+    <p class="lead">用一个带方向的层次表明当前页面的位置。</p>
+    <p>分割符自动地通过CSS的<code>:before</code>和<code>content</code>添加上了。</p>
+    <div class="bs-example">
+      <ol class="breadcrumb">
+        <li class="active">Home</li>
+      </ol>
+      <ol class="breadcrumb">
+        <li><a href="#">Home</a></li>
+        <li class="active">Library</li>
+      </ol>
+      <ol class="breadcrumb" style="margin-bottom: 5px;">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Library</a></li>
+        <li class="active">Data</li>
+      </ol>
+    </div>
+<div class="highlight">
+<pre><code class="language-html xml"><span class="tag">&lt;<span class="title">ol</span> <span class="attribute">class</span>=<span class="value">"breadcrumb"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Home<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Library<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"active"</span>&gt;</span>Data<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ol</span>&gt;</span></code></pre>
+
+</div>
+  </div>
+
+
+
+  
+  <div class="bs-docs-section">
+    <div class="page-header">
+      <h1 id="pagination">分页</h1>
+    </div>
+    <p class="lead">为您的网站或应用提供多页的分页组件，或是用更简单的<a href="#pagination-pager">翻页代替</a>。</p>
+
+    <h2 id="pagination-default">默认分页</h2>
+    <p>Rdio启发出了这个简单的分页，用在应用或搜索结果中超级棒。这个大块容易看见，容易缩放并有大块的点击区域。</p>
+    <div class="bs-example">
+      <ul class="pagination">
+        <li><a href="#">«</a></li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">»</a></li>
+      </ul>
+    </div>
+<div class="highlight">
+<pre><code class="language-html xml"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"pagination"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>&amp;laquo;<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>1<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>2<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>3<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>4<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>5<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>&amp;raquo;<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span></code></pre>
+
+</div>
+
+    <h3>激活和禁用状态</h3>
+    <p>链接在不同情况下可以定制。给不能点击的链接用<code>.disabled</code> 并且用<code>.active</code>显示是当前页。</p>
+    <div class="bs-example">
+      <ul class="pagination">
+        <li class="disabled"><a href="#">«</a></li>
+        <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">»</a></li>
+     </ul>
+    </div>
+<div class="highlight">
+<pre><code class="language-html xml"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"pagination"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"disabled"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>&amp;laquo;<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"active"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>1 <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"sr-only"</span>&gt;</span>(current)<span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  ...
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span></code></pre>
+
+</div>
+    <p>你还可以将active或disabled应用于<code>&lt;span&gt;</code>标签，这样就可以让其保持需要的样式并移除点击功能。</p>
+<div class="highlight">
+<pre><code class="language-html xml"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"pagination"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"disabled"</span>&gt;</span><span class="tag">&lt;<span class="title">span</span>&gt;</span>&amp;laquo;<span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"active"</span>&gt;</span><span class="tag">&lt;<span class="title">span</span>&gt;</span>1 <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"sr-only"</span>&gt;</span>(current)<span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  ...
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span></code></pre>
+
+</div>
+
+
+    <h3>尺寸</h3>
+    <p>想要更小或更大的分页？要得到更多尺寸，加上<code>.pagination-lg</code>或<code>.pagination-sm</code>吧。</p>
+    <div class="bs-example">
+      <div>
+        <ul class="pagination pagination-lg">
+          <li><a href="#">«</a></li>
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li><a href="#">»</a></li>
+        </ul>
+      </div>
+      <div>
+        <ul class="pagination">
+          <li><a href="#">«</a></li>
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li><a href="#">»</a></li>
+        </ul>
+      </div>
+      <div>
+        <ul class="pagination pagination-sm">
+          <li><a href="#">«</a></li>
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li><a href="#">»</a></li>
+        </ul>
+      </div>
+    </div>
+<div class="highlight">
+<pre><code class="language-html r">&lt;ul class=<span class="string">"pagination pagination-lg"</span>&gt;<span class="keyword">...</span>&lt;/ul&gt;
+&lt;ul class=<span class="string">"pagination"</span>&gt;<span class="keyword">...</span>&lt;/ul&gt;
+&lt;ul class=<span class="string">"pagination pagination-sm"</span>&gt;<span class="keyword">...</span>&lt;/ul&gt;</code></pre>
+
+</div>
+
+
+    <h2 id="pagination-pager">翻页</h2>
+    <p>用轻便的标记和样式，就能做个上一页和下一页的简单翻页。用在像博客和杂志这样的简单站点上棒极了。</p>
+
+    <h3>默认案例</h3>
+    <p>在默认的翻页中，链接居中。</p>
+    <div class="bs-example">
+      <ul class="pager">
+        <li><a href="#">Previous</a></li>
+        <li><a href="#">Next</a></li>
+      </ul>
+    </div>
+<div class="highlight">
+<pre><code class="language-html xml"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"pager"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Previous<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Next<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span></code></pre>
+
+</div>
+
+    <h3>对齐链接</h3>
+    <p>您可以把链接向两端对齐作为替代。</p>
+    <div class="bs-example">
+      <ul class="pager">
+        <li class="previous"><a href="#">← Older</a></li>
+        <li class="next"><a href="#">Newer →</a></li>
+      </ul>
+    </div>
+<div class="highlight">
+<pre><code class="language-html xml"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"pager"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"previous"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>&amp;larr; Older<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"next"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Newer &amp;rarr;<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span></code></pre>
+
+</div>
+
+
+    <h3>可选的禁用状态</h3>
+    <p>翻页链接也用分页中的<code>.disabled</code>工具类。</p>
+    <div class="bs-example">
+      <ul class="pager">
+        <li class="previous disabled"><a href="#">← Older</a></li>
+        <li class="next"><a href="#">Newer →</a></li>
+      </ul>
+    </div>
+<div class="highlight">
+<pre><code class="language-html xml"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"pager"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"previous disabled"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>&amp;larr; Older<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"next"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Newer &amp;rarr;<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span></code></pre>
+
+</div>
+  </div>
+
+
+
+  
+  <div class="bs-docs-section">
+    <div class="page-header">
+      <h1 id="labels">标签</h1>
+    </div>
+    <p class="lead"></p>
+
+    <h3>案例</h3>
+    <div class="bs-example">
+      <h1>Example heading <span class="label label-default">New</span></h1>
+      <h2>Example heading <span class="label label-default">New</span></h2>
+      <h3>Example heading <span class="label label-default">New</span></h3>
+      <h4>Example heading <span class="label label-default">New</span></h4>
+      <h5>Example heading <span class="label label-default">New</span></h5>
+      <h6>Example heading <span class="label label-default">New</span></h6>
+    </div>
+<div class="highlight">
+<pre><code class="language-html xml"><span class="tag">&lt;<span class="title">h3</span>&gt;</span>Example heading <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"label label-default"</span>&gt;</span>New<span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;/<span class="title">h3</span>&gt;</span></code></pre>
+
+</div>
+
+  <h3>可用的变体</h3>
+  <p>用下面的任何一个class即可改变标签的外观。</p>
+    <div class="bs-example">
+      <span class="label label-default">Default</span>
+      <span class="label label-primary">Primary</span>
+      <span class="label label-success">Success</span>
+      <span class="label label-info">Info</span>
+      <span class="label label-warning">Warning</span>
+      <span class="label label-danger">Danger</span>
+    </div>
+<div class="highlight">
+<pre><code class="language-html xml"><span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"label label-default"</span>&gt;</span>Default<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+<span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"label label-primary"</span>&gt;</span>Primary<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+<span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"label label-success"</span>&gt;</span>Success<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+<span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"label label-info"</span>&gt;</span>Info<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+<span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"label label-warning"</span>&gt;</span>Warning<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+<span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"label label-danger"</span>&gt;</span>Danger<span class="tag">&lt;/<span class="title">span</span>&gt;</span></code></pre>
+
+</div>
+
+  </div>
+
+
+
+  
+  <div class="bs-docs-section">
+    <div class="page-header">
+      <h1 id="badges">徽章</h1>
+    </div>
+    <p class="lead">给链接，Bootstrap导航等等加入<code>&lt;span class="badge"&gt;</code>，可以容易地高亮新的或未读的条目。</p>
+
+    <div class="bs-example">
+      <a href="#">Inbox <span class="badge">42</span></a>
+    </div>
+<div class="highlight">
+<pre><code class="language-html xml"><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Inbox <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"badge"</span>&gt;</span>42<span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;/<span class="title">a</span>&gt;</span></code></pre>
+
+</div>
+
+    <h4>自动消失（self colapsing）</h4>
+    <p>当没有新的或未读的条目时，里面没有内容的徽章会消失（通过CSS的<code>:empty</code>选择器实现）。</p>
+
+    <div class="bs-callout bs-callout-danger">
+      <h4>跨浏览器兼容性</h4>
+      <p>徽章在Internet Explorer 8中不会自动消失，因为它需要对<code>:empty</code>选择器的支持。</p>
+    </div>
+
+    <h4>适应导航的激活状态</h4>
+    <p>在胶囊式导航和列表式导航中的徽章有内置的样式。</p>
+    <div class="bs-example">
+      <ul class="nav nav-pills">
+        <li class="active"><a href="#">Home <span class="badge">42</span></a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Messages <span class="badge">3</span></a></li>
+      </ul>
+      <br>
+      <ul class="nav nav-pills nav-stacked" style="max-width: 260px;">
+        <li class="active">
+          <a href="#">
+            <span class="badge pull-right">42</span>
+            Home
+          </a>
+        </li>
+        <li><a href="#">Profile</a></li>
+        <li>
+          <a href="#">
+            <span class="badge pull-right">3</span>
+            Messages
+          </a>
+        </li>
+      </ul>
+    </div>
+<div class="highlight">
+<pre><code class="language-html xml"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"nav nav-pills nav-stacked"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"active"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"badge pull-right"</span>&gt;</span>42<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+      Home
+    <span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  ...
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span></code></pre>
+
+</div>
+  </div>
+
+
+
+  
+  <div class="bs-docs-section">
+    <div class="page-header">
+      <h1 id="jumbotron">大屏幕介绍</h1>
+    </div>
+    <p>轻量，灵活的可选组件，扩展整个视角，展示您站点上的关键内容。要让大屏幕介绍是屏幕宽度，请别把它包括在<code>.container</code>。把它放在容器内会让它与您的其它内容宽度相同，并且有圆角。</p>
+    <div class="bs-example">
+      <div class="jumbotron">
+          <div class="container">
+                <h1>Hello, world!</h1>
+                <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                <p><a class="btn btn-primary btn-lg" role="button">Learn more</a></p>
+        </div>
+      </div>
+    </div>
+<div class="highlight">
+<pre><code class="language-html xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"jumbotron"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">h1</span>&gt;</span>Hello, world!<span class="tag">&lt;/<span class="title">h1</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">p</span>&gt;</span>...<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">p</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">class</span>=<span class="value">"btn btn-primary btn-lg"</span> <span class="attribute">role</span>=<span class="value">"button"</span>&gt;</span>Learn more<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
+
+</div>
+  </div>
+
+
+
+  
+  <div class="bs-docs-section">
+    <div class="page-header">
+      <h1 id="page-header">页面标题</h1>
+    </div>
+    <p>简单的<code>h1</code>样式，可以适当地分出空间且分开页面中的章节。像其它组件一样，它可以使用<code>h1</code>的默认<code>small</code>元素（添加了一些额外的样式）。</p>
+    <div class="bs-example">
+      <div class="page-header">
+        <h1>Example page header <small>Subtext for header</small></h1>
+      </div>
+    </div>
+<div class="highlight">
+<pre><code class="language-html xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"page-header"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">h1</span>&gt;</span>Example page header <span class="tag">&lt;<span class="title">small</span>&gt;</span>Subtext for header<span class="tag">&lt;/<span class="title">small</span>&gt;</span><span class="tag">&lt;/<span class="title">h1</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
+
+</div>
+  </div>
+
+
+
+  
+  <div class="bs-docs-section">
+    <div class="page-header">
+      <h1 id="thumbnails">缩略图</h1>
+    </div>
+    <p class="lead">用缩略图组件扩展Bootstrap的<a href="http://v3.bootcss.com/css/#grid">栅格系统</a>，可以简单地显示栅格样式的图像，视频，文本，等等。</p>
+
+    <h3 id="thumbnails-default">默认案例</h3>
+    <p>Boostrap的缩略图的默认设计仅需最小的标记，就能展示带链接的图片。</p>
+    <div class="bs-example">
+      <div class="row">
+        <div class="col-sm-6 col-md-3">
+          <a href="#" class="thumbnail">
+            <img data-src="holder.js/100%x180" alt="100%x180" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKsAAAC0CAYAAADraNxXAAAEaElEQVR4Xu3YS04UahhFUWgxMYbNmOjT0kACKct6ija2Z92mQTn/t1cqlfv4+vr648F/LhC4wCOsgUomflwAVhAyF4A1k8pQWBnIXADWTCpDYWUgcwFYM6kMhZWBzAVgzaQyFFYGMheANZPKUFgZyFwA1kwqQ2FlIHMBWDOpDIWVgcwFYM2kMhRWBjIXgDWTylBYGchcANZMKkNhZSBzAVgzqQyFlYHMBWDNpDIUVgYyF4A1k8pQWBnIXADWTCpDYWUgcwFYM6kMhZWBzAVgzaQyFFYGMheANZPKUFgZyFwA1kwqQ2FlIHMBWDOpDIWVgcwFYM2kMhRWBjIXgDWTylBYGchcANZMKkNhZSBzAVgzqQyFlYHMBWDNpDIUVgYyF4A1k8pQWBnIXADWTCpDYWUgcwFYM6kMhZWBzAVgzaQyFFYGMheANZPKUFgZyFwA1kwqQ2FlIHMBWDOpDIWVgcwFYM2kMhRWBjIXgDWTylBYGchcANZMKkNhZSBzAVgzqQyFlYHMBWDNpDIUVgYyF4A1k8pQWBnIXADWTCpDYWUgcwFYM6kMhZWBzAVgzaQyFFYGMheANZPKUFgZyFwA1kwqQ6exvry8fAh4fn7+kvD5Z8c0Tv3M4Z/dQunU73v/e8e/89Kee3/nLbsqPzOL9RDIOYjXMN8D55bfdwj3/d8+/v3nsFewfXfnLNZjGKcOee2T8B6s537fJZCw/loF1qOvAZ/nufQpdukT9+np6eHt7e3ryrd8fTj3NQBWWH/7fnrqE/JerJ+fnIdYj//dS8g/f/bwZ2CF9Z9hvfbVAtbvfWv1NeAvfQ3wyfo9iLf87Vmsl/530aVPyGvfL899Z/3T/z11bectkf+Xn5nF+r8EXHoHrEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142/9CRINeTax7S6yAAAAAElFTkSuQmCC" style="height: 180px; width: 100%; display: block;">
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <a href="#" class="thumbnail">
+            <img data-src="holder.js/100%x180" alt="100%x180" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKsAAAC0CAYAAADraNxXAAAEaElEQVR4Xu3YS04UahhFUWgxMYbNmOjT0kACKct6ija2Z92mQTn/t1cqlfv4+vr648F/LhC4wCOsgUomflwAVhAyF4A1k8pQWBnIXADWTCpDYWUgcwFYM6kMhZWBzAVgzaQyFFYGMheANZPKUFgZyFwA1kwqQ2FlIHMBWDOpDIWVgcwFYM2kMhRWBjIXgDWTylBYGchcANZMKkNhZSBzAVgzqQyFlYHMBWDNpDIUVgYyF4A1k8pQWBnIXADWTCpDYWUgcwFYM6kMhZWBzAVgzaQyFFYGMheANZPKUFgZyFwA1kwqQ2FlIHMBWDOpDIWVgcwFYM2kMhRWBjIXgDWTylBYGchcANZMKkNhZSBzAVgzqQyFlYHMBWDNpDIUVgYyF4A1k8pQWBnIXADWTCpDYWUgcwFYM6kMhZWBzAVgzaQyFFYGMheANZPKUFgZyFwA1kwqQ2FlIHMBWDOpDIWVgcwFYM2kMhRWBjIXgDWTylBYGchcANZMKkNhZSBzAVgzqQyFlYHMBWDNpDIUVgYyF4A1k8pQWBnIXADWTCpDYWUgcwFYM6kMhZWBzAVgzaQyFFYGMheANZPKUFgZyFwA1kwqQ6exvry8fAh4fn7+kvD5Z8c0Tv3M4Z/dQunU73v/e8e/89Kee3/nLbsqPzOL9RDIOYjXMN8D55bfdwj3/d8+/v3nsFewfXfnLNZjGKcOee2T8B6s537fJZCw/loF1qOvAZ/nufQpdukT9+np6eHt7e3ryrd8fTj3NQBWWH/7fnrqE/JerJ+fnIdYj//dS8g/f/bwZ2CF9Z9hvfbVAtbvfWv1NeAvfQ3wyfo9iLf87Vmsl/530aVPyGvfL899Z/3T/z11bectkf+Xn5nF+r8EXHoHrEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142/9CRINeTax7S6yAAAAAElFTkSuQmCC" style="height: 180px; width: 100%; display: block;">
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <a href="#" class="thumbnail">
+            <img data-src="holder.js/100%x180" alt="100%x180" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKsAAAC0CAYAAADraNxXAAAEaElEQVR4Xu3YS04UahhFUWgxMYbNmOjT0kACKct6ija2Z92mQTn/t1cqlfv4+vr648F/LhC4wCOsgUomflwAVhAyF4A1k8pQWBnIXADWTCpDYWUgcwFYM6kMhZWBzAVgzaQyFFYGMheANZPKUFgZyFwA1kwqQ2FlIHMBWDOpDIWVgcwFYM2kMhRWBjIXgDWTylBYGchcANZMKkNhZSBzAVgzqQyFlYHMBWDNpDIUVgYyF4A1k8pQWBnIXADWTCpDYWUgcwFYM6kMhZWBzAVgzaQyFFYGMheANZPKUFgZyFwA1kwqQ2FlIHMBWDOpDIWVgcwFYM2kMhRWBjIXgDWTylBYGchcANZMKkNhZSBzAVgzqQyFlYHMBWDNpDIUVgYyF4A1k8pQWBnIXADWTCpDYWUgcwFYM6kMhZWBzAVgzaQyFFYGMheANZPKUFgZyFwA1kwqQ2FlIHMBWDOpDIWVgcwFYM2kMhRWBjIXgDWTylBYGchcANZMKkNhZSBzAVgzqQyFlYHMBWDNpDIUVgYyF4A1k8pQWBnIXADWTCpDYWUgcwFYM6kMhZWBzAVgzaQyFFYGMheANZPKUFgZyFwA1kwqQ6exvry8fAh4fn7+kvD5Z8c0Tv3M4Z/dQunU73v/e8e/89Kee3/nLbsqPzOL9RDIOYjXMN8D55bfdwj3/d8+/v3nsFewfXfnLNZjGKcOee2T8B6s537fJZCw/loF1qOvAZ/nufQpdukT9+np6eHt7e3ryrd8fTj3NQBWWH/7fnrqE/JerJ+fnIdYj//dS8g/f/bwZ2CF9Z9hvfbVAtbvfWv1NeAvfQ3wyfo9iLf87Vmsl/530aVPyGvfL899Z/3T/z11bectkf+Xn5nF+r8EXHoHrEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142/9CRINeTax7S6yAAAAAElFTkSuQmCC" style="height: 180px; width: 100%; display: block;">
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <a href="#" class="thumbnail">
+            <img data-src="holder.js/100%x180" alt="100%x180" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKsAAAC0CAYAAADraNxXAAAEaElEQVR4Xu3YS04UahhFUWgxMYbNmOjT0kACKct6ija2Z92mQTn/t1cqlfv4+vr648F/LhC4wCOsgUomflwAVhAyF4A1k8pQWBnIXADWTCpDYWUgcwFYM6kMhZWBzAVgzaQyFFYGMheANZPKUFgZyFwA1kwqQ2FlIHMBWDOpDIWVgcwFYM2kMhRWBjIXgDWTylBYGchcANZMKkNhZSBzAVgzqQyFlYHMBWDNpDIUVgYyF4A1k8pQWBnIXADWTCpDYWUgcwFYM6kMhZWBzAVgzaQyFFYGMheANZPKUFgZyFwA1kwqQ2FlIHMBWDOpDIWVgcwFYM2kMhRWBjIXgDWTylBYGchcANZMKkNhZSBzAVgzqQyFlYHMBWDNpDIUVgYyF4A1k8pQWBnIXADWTCpDYWUgcwFYM6kMhZWBzAVgzaQyFFYGMheANZPKUFgZyFwA1kwqQ2FlIHMBWDOpDIWVgcwFYM2kMhRWBjIXgDWTylBYGchcANZMKkNhZSBzAVgzqQyFlYHMBWDNpDIUVgYyF4A1k8pQWBnIXADWTCpDYWUgcwFYM6kMhZWBzAVgzaQyFFYGMheANZPKUFgZyFwA1kwqQ6exvry8fAh4fn7+kvD5Z8c0Tv3M4Z/dQunU73v/e8e/89Kee3/nLbsqPzOL9RDIOYjXMN8D55bfdwj3/d8+/v3nsFewfXfnLNZjGKcOee2T8B6s537fJZCw/loF1qOvAZ/nufQpdukT9+np6eHt7e3ryrd8fTj3NQBWWH/7fnrqE/JerJ+fnIdYj//dS8g/f/bwZ2CF9Z9hvfbVAtbvfWv1NeAvfQ3wyfo9iLf87Vmsl/530aVPyGvfL899Z/3T/z11bectkf+Xn5nF+r8EXHoHrEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142+FNR5waT6sS7Xjb4U1HnBpPqxLteNvhTUecGk+rEu142/9CRINeTax7S6yAAAAAElFTkSuQmCC" style="height: 180px; width: 100%; display: block;">
+          </a>
+        </div>
+      </div>
+    </div>
+<div class="highlight">
+<pre><code class="language-html xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"row"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"col-sm-6 col-md-3"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"thumbnail"</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">img</span> <span class="attribute">data-src</span>=<span class="value">"holder.js/100%x180"</span> <span class="attribute">alt</span>=<span class="value">"..."</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  ...
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
+
+</div>
+
+    <h3 id="thumbnails-custom-content">定制内容</h3>
+    <p>用一点点额外的标记，可以把任何种类的HTML内容像标题，段落或按钮加入缩略图。</p>
+    <div class="bs-example">
+      <div class="row">
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img data-src="holder.js/300x200" alt="300x200" src="data:image/png;base64,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" style="width: 300px; height: 200px;">
+            <div class="caption">
+              <h3>Thumbnail label</h3>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img data-src="holder.js/300x200" alt="300x200" src="data:image/png;base64,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" style="width: 300px; height: 200px;">
+            <div class="caption">
+              <h3>Thumbnail label</h3>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img data-src="holder.js/300x200" alt="300x200" src="data:image/png;base64,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" style="width: 300px; height: 200px;">
+            <div class="caption">
+              <h3>Thumbnail label</h3>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<div class="highlight">
+<pre><code class="language-html xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"row"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"col-sm-6 col-md-4"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"thumbnail"</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">img</span> <span class="attribute">data-src</span>=<span class="value">"holder.js/300x200"</span> <span class="attribute">alt</span>=<span class="value">"..."</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"caption"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">h3</span>&gt;</span>Thumbnail label<span class="tag">&lt;/<span class="title">h3</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">p</span>&gt;</span>...<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">p</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"btn btn-primary"</span> <span class="attribute">role</span>=<span class="value">"button"</span>&gt;</span>Button<span class="tag">&lt;/<span class="title">a</span>&gt;</span> <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"btn btn-default"</span> <span class="attribute">role</span>=<span class="value">"button"</span>&gt;</span>Button<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+      <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
+
+</div>
+  </div>
+
+
+
+
+  
+  <div class="bs-docs-section">
+    <div class="page-header">
+      <h1 id="alerts">警告框</h1>
+    </div>
+    <p class="lead">为典型的用户动作提供少数可用且灵活的反馈消息。要用关闭功能，请使用<a href="http://v3.bootcss.com/javascript/#alerts">jQuery警告框插件</a>.</p>
+
+    <h2 id="alerts-examples">案例</h2>
+    <p>为了得到基本的警告信息，把任何文本和可选的关闭按钮放入<code>.alert</code>和四种有意义的类中（例如，<code>.alert-success</code>）。</p>
+
+    <div class="bs-callout bs-callout-info">
+      <h4>没有默认类</h4>
+      <p>警告框没有默认类，只有基类和修饰类。默认的灰色警告框并没有多少意义。所以您要使用一种内容类。从成功，消息，警告或危险中任选其一。</p>
+    </div>
+
+    <div class="bs-example">
+      <div class="alert alert-success">
+        <strong>Well done!</strong> You successfully read this important alert message.
+      </div>
+      <div class="alert alert-info">
+        <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+      </div>
+      <div class="alert alert-warning">
+        <strong>Warning!</strong> Best check yo self, you're not looking too good.
+      </div>
+      <div class="alert alert-danger">
+        <strong>Oh snap!</strong> Change a few things up and try submitting again.
+      </div>
+    </div>
+<div class="highlight">
+<pre><code class="language-html r">&lt;div class=<span class="string">"alert alert-success"</span>&gt;<span class="keyword">...</span>&lt;/div&gt;
+&lt;div class=<span class="string">"alert alert-info"</span>&gt;<span class="keyword">...</span>&lt;/div&gt;
+&lt;div class=<span class="string">"alert alert-warning"</span>&gt;<span class="keyword">...</span>&lt;/div&gt;
+&lt;div class=<span class="string">"alert alert-danger"</span>&gt;<span class="keyword">...</span>&lt;/div&gt;</code></pre>
+
+</div>
+
+    <h2 id="alerts-dismissable">可关闭的警告框</h2>
+    <p>可以用一个可选的<code>.alert-dismissable</code>和关闭按钮。</p>
+    <div class="bs-example">
+      <div class="alert alert-warning alert-dismissable">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+        <strong>Warning!</strong> Best check yo self, you're not looking too good.
+      </div>
+    </div>
+<div class="highlight">
+<pre><code class="language-html xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"alert alert-warning alert-dismissable"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">button</span> <span class="attribute">type</span>=<span class="value">"button"</span> <span class="attribute">class</span>=<span class="value">"close"</span> <span class="attribute">data-dismiss</span>=<span class="value">"alert"</span> <span class="attribute">aria-hidden</span>=<span class="value">"true"</span>&gt;</span>&amp;times;<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">strong</span>&gt;</span>Warning!<span class="tag">&lt;/<span class="title">strong</span>&gt;</span> Best check yo self, you're not looking too good.
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
+
+</div>
+
+    <div class="bs-callout bs-callout-warning">
+      <h4>确定在所有设备上的正确行为</h4>
+      <p>一定要给<code>data-dismiss="alert"</code>属性用上<code>&lt;button&gt;</code>。</p>
+    </div>
+
+    <h2 id="alerts-links">警告框中的链接</h2>
+    <p>用<code>.alert-link</code>工具类，可以快速提供在任何警告框中相符的颜色。</p>
+    <div class="bs-example">
+      <div class="alert alert-success">
+        <strong>Well done!</strong> You successfully read <a href="#" class="alert-link">this important alert message</a>.
+      </div>
+      <div class="alert alert-info">
+        <strong>Heads up!</strong> This <a href="#" class="alert-link">alert needs your attention</a>, but it's not super important.
+      </div>
+      <div class="alert alert-warning">
+        <strong>Warning!</strong> Best check yo self, you're <a href="#" class="alert-link">not looking too good</a>.
+      </div>
+      <div class="alert alert-danger">
+        <strong>Oh snap!</strong> <a href="#" class="alert-link">Change a few things up</a> and try submitting again.
+      </div>
+    </div>
+<div class="highlight">
+<pre><code class="language-html xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"alert alert-success"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"alert-link"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"alert alert-info"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"alert-link"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"alert alert-warning"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"alert-link"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"alert alert-danger"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"alert-link"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
+
+</div>
+  </div>
+
+
+
+
+  
+  <div class="bs-docs-section">
+    <div class="page-header">
+      <h1 id="progress">进度条</h1>
+    </div>
+    <p class="lead">提供工作或动作的实时反馈，只用简单且灵活的进度条。</p>
+
+    <div class="bs-callout bs-callout-danger">
+      <h4>跨浏览器兼容性</h4>
+      <p>进度条使用了CSS3的transition和animation属性来完成一些效果。这些特性在Internet Explorer 9或以下版本中、Firefox的老版本中没有被支持。Opera 12不支持znimation属性。</p>
+    </div>
+
+    <h3 id="progress-basic">基本案例</h3>
+    <p>默认的进度条。</p>
+    <div class="bs-example">
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+          <span class="sr-only">60% Complete</span>
+        </div>
+      </div>
+    </div>
+<div class="highlight">
+<pre><code class="language-html xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"progress"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"progress-bar"</span> <span class="attribute">role</span>=<span class="value">"progressbar"</span> <span class="attribute">aria-valuenow</span>=<span class="value">"60"</span> <span class="attribute">aria-valuemin</span>=<span class="value">"0"</span> <span class="attribute">aria-valuemax</span>=<span class="value">"100"</span> <span class="attribute">style</span>=<span class="value">"width: 60%;"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"sr-only"</span>&gt;</span>60% Complete<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
+
+</div>
+
+    <h3 id="progress-alternatives">有意义的替换</h3>
+    <p>为了一致的样式，进度条使用与按钮和警告框相同的类。</p>
+    <div class="bs-example">
+      <div class="progress">
+        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+          <span class="sr-only">40% Complete (success)</span>
+        </div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+          <span class="sr-only">20% Complete</span>
+        </div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+          <span class="sr-only">60% Complete (warning)</span>
+        </div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+          <span class="sr-only">80% Complete (danger)</span>
+        </div>
+      </div>
+    </div>
+<div class="highlight">
+<pre><code class="language-html xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"progress"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"progress-bar progress-bar-success"</span> <span class="attribute">role</span>=<span class="value">"progressbar"</span> <span class="attribute">aria-valuenow</span>=<span class="value">"40"</span> <span class="attribute">aria-valuemin</span>=<span class="value">"0"</span> <span class="attribute">aria-valuemax</span>=<span class="value">"100"</span> <span class="attribute">style</span>=<span class="value">"width: 40%"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"sr-only"</span>&gt;</span>40% Complete (success)<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"progress"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"progress-bar progress-bar-info"</span> <span class="attribute">role</span>=<span class="value">"progressbar"</span> <span class="attribute">aria-valuenow</span>=<span class="value">"20"</span> <span class="attribute">aria-valuemin</span>=<span class="value">"0"</span> <span class="attribute">aria-valuemax</span>=<span class="value">"100"</span> <span class="attribute">style</span>=<span class="value">"width: 20%"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"sr-only"</span>&gt;</span>20% Complete<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"progress"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"progress-bar progress-bar-warning"</span> <span class="attribute">role</span>=<span class="value">"progressbar"</span> <span class="attribute">aria-valuenow</span>=<span class="value">"60"</span> <span class="attribute">aria-valuemin</span>=<span class="value">"0"</span> <span class="attribute">aria-valuemax</span>=<span class="value">"100"</span> <span class="attribute">style</span>=<span class="value">"width: 60%"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"sr-only"</span>&gt;</span>60% Complete (warning)<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"progress"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"progress-bar progress-bar-danger"</span> <span class="attribute">role</span>=<span class="value">"progressbar"</span> <span class="attribute">aria-valuenow</span>=<span class="value">"80"</span> <span class="attribute">aria-valuemin</span>=<span class="value">"0"</span> <span class="attribute">aria-valuemax</span>=<span class="value">"100"</span> <span class="attribute">style</span>=<span class="value">"width: 80%"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"sr-only"</span>&gt;</span>80% Complete<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
+
+</div>
+
+    <h3 id="progress-striped">条纹效果</h3>
+    <p>用一个渐变可以创建条纹效果，在IE8中不可用。</p>
+    <div class="bs-example">
+      <div class="progress progress-striped">
+        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+          <span class="sr-only">40% Complete (success)</span>
+        </div>
+      </div>
+      <div class="progress progress-striped">
+        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+          <span class="sr-only">20% Complete</span>
+        </div>
+      </div>
+      <div class="progress progress-striped">
+        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+          <span class="sr-only">60% Complete (warning)</span>
+        </div>
+      </div>
+      <div class="progress progress-striped">
+        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+          <span class="sr-only">80% Complete (danger)</span>
+        </div>
+      </div>
+    </div>
+<div class="highlight">
+<pre><code class="language-html xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"progress progress-striped"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"progress-bar progress-bar-success"</span> <span class="attribute">role</span>=<span class="value">"progressbar"</span> <span class="attribute">aria-valuenow</span>=<span class="value">"40"</span> <span class="attribute">aria-valuemin</span>=<span class="value">"0"</span> <span class="attribute">aria-valuemax</span>=<span class="value">"100"</span> <span class="attribute">style</span>=<span class="value">"width: 40%"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"sr-only"</span>&gt;</span>40% Complete (success)<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"progress progress-striped"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"progress-bar progress-bar-info"</span> <span class="attribute">role</span>=<span class="value">"progressbar"</span> <span class="attribute">aria-valuenow</span>=<span class="value">"20"</span> <span class="attribute">aria-valuemin</span>=<span class="value">"0"</span> <span class="attribute">aria-valuemax</span>=<span class="value">"100"</span> <span class="attribute">style</span>=<span class="value">"width: 20%"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"sr-only"</span>&gt;</span>20% Complete<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"progress progress-striped"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"progress-bar progress-bar-warning"</span> <span class="attribute">role</span>=<span class="value">"progressbar"</span> <span class="attribute">aria-valuenow</span>=<span class="value">"60"</span> <span class="attribute">aria-valuemin</span>=<span class="value">"0"</span> <span class="attribute">aria-valuemax</span>=<span class="value">"100"</span> <span class="attribute">style</span>=<span class="value">"width: 60%"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"sr-only"</span>&gt;</span>60% Complete (warning)<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"progress progress-striped"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"progress-bar progress-bar-danger"</span> <span class="attribute">role</span>=<span class="value">"progressbar"</span> <span class="attribute">aria-valuenow</span>=<span class="value">"80"</span> <span class="attribute">aria-valuemin</span>=<span class="value">"0"</span> <span class="attribute">aria-valuemax</span>=<span class="value">"100"</span> <span class="attribute">style</span>=<span class="value">"width: 80%"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"sr-only"</span>&gt;</span>80% Complete (danger)<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
+
+</div>
+
+    <h3 id="progress-animated">运动效果</h3>
+    <p>给<code>.progress-striped</code>加上<code>.active</code>使它由右向左运动。在IE的所有版本不可用。</p>
+    <div class="bs-example">
+      <div class="progress progress-striped active">
+        <div class="progress-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%"><span class="sr-only">45% Complete</span></div>
+      </div>
+    </div>
+<div class="highlight">
+<pre><code class="language-html xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"progress progress-striped active"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"progress-bar"</span>  <span class="attribute">role</span>=<span class="value">"progressbar"</span> <span class="attribute">aria-valuenow</span>=<span class="value">"45"</span> <span class="attribute">aria-valuemin</span>=<span class="value">"0"</span> <span class="attribute">aria-valuemax</span>=<span class="value">"100"</span> <span class="attribute">style</span>=<span class="value">"width: 45%"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"sr-only"</span>&gt;</span>45% Complete<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
+
+</div>
+
+    <h3 id="progress-stacked">堆叠效果</h3>
+    <p>把多个进度条放入同一个<code>.progress</code>，使它们堆叠。</p>
+    <div class="bs-example">
+      <div class="progress">
+        <div class="progress-bar progress-bar-success" style="width: 35%">
+          <span class="sr-only">35% Complete (success)</span>
+        </div>
+        <div class="progress-bar progress-bar-warning" style="width: 20%">
+          <span class="sr-only">20% Complete (warning)</span>
+        </div>
+        <div class="progress-bar progress-bar-danger" style="width: 10%">
+          <span class="sr-only">10% Complete (danger)</span>
+        </div>
+      </div>
+    </div>
+<div class="highlight">
+<pre><code class="language-html xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"progress"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"progress-bar progress-bar-success"</span> <span class="attribute">style</span>=<span class="value">"width: 35%"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"sr-only"</span>&gt;</span>35% Complete (success)<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"progress-bar progress-bar-warning"</span> <span class="attribute">style</span>=<span class="value">"width: 20%"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"sr-only"</span>&gt;</span>20% Complete (warning)<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"progress-bar progress-bar-danger"</span> <span class="attribute">style</span>=<span class="value">"width: 10%"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"sr-only"</span>&gt;</span>10% Complete (danger)<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
+
+</div>
+  </div>
+
+
+
+
+  
+  <div class="bs-docs-section">
+    <div class="page-header">
+      <h1 id="media">媒体对象</h1>
+    </div>
+    <p class="lead">这是一个抽象的样式，用以构建不同类型的组件，这些组件都具有在文本内容的左或右对齐的图片（就像blog内容或Tweets等）。</p>
+
+    <h3 id="media-default">默认媒体</h3>
+    <p>默认的媒体允许在一个内容块的左边或右边浮动一个媒体对象（图像，视频，音频）</p>
+    <div class="bs-example">
+      <div class="media">
+        <a class="pull-left" href="#">
+          <img class="media-object" data-src="holder.js/64x64" alt="64x64" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABN0lEQVR4Xu2YQQ6EIAxFdeXFODZnYu9qJk5C0sGiUiAx8FyKVPr76VPWEMJnmfhaEQAHsAXoARP3wIUmCAWgABSAAlBgYgXAIBgEg2AQDE4MAX6GwCAYBINgEAyCwYkVAIO1GPTe//nHOXfyU3xGG9PM1yNmzuRVDpCJ5ZKUyTwRoEfMqx3eTIBcJbdtW/Z9/w2XCtAqZncB5Atkkkc1NQFileVYFCi1fypcLqa1jzd1QM6+2va4EycKWRLTIkI3AY7FPKmmVmF5LxXvLmapCF0FiItp5QCZXClZulBAq/IVBtN9rvUAa8zSysfnqxxgfemb5iFA7Zfgm6ppWQsOwAEciXEkxpGYpXuOMgcKQAEoAAWgwCgd3ZIHFIACUAAKQAFL9xxlDhSAAlAACkCBUTq6JY/pKfAFwO6XkLwNdToAAAAASUVORK5CYII=" style="width: 64px; height: 64px;">
+        </a>
+        <div class="media-body">
+          <h4 class="media-heading">Media heading</h4>
+          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+        </div>
+      </div>
+      <div class="media">
+        <a class="pull-left" href="#">
+          <img class="media-object" data-src="holder.js/64x64" alt="64x64" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABN0lEQVR4Xu2YQQ6EIAxFdeXFODZnYu9qJk5C0sGiUiAx8FyKVPr76VPWEMJnmfhaEQAHsAXoARP3wIUmCAWgABSAAlBgYgXAIBgEg2AQDE4MAX6GwCAYBINgEAyCwYkVAIO1GPTe//nHOXfyU3xGG9PM1yNmzuRVDpCJ5ZKUyTwRoEfMqx3eTIBcJbdtW/Z9/w2XCtAqZncB5Atkkkc1NQFileVYFCi1fypcLqa1jzd1QM6+2va4EycKWRLTIkI3AY7FPKmmVmF5LxXvLmapCF0FiItp5QCZXClZulBAq/IVBtN9rvUAa8zSysfnqxxgfemb5iFA7Zfgm6ppWQsOwAEciXEkxpGYpXuOMgcKQAEoAAWgwCgd3ZIHFIACUAAKQAFL9xxlDhSAAlAACkCBUTq6JY/pKfAFwO6XkLwNdToAAAAASUVORK5CYII=" style="width: 64px; height: 64px;">
+        </a>
+        <div class="media-body">
+          <h4 class="media-heading">Media heading</h4>
+          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+          <div class="media">
+            <a class="pull-left" href="#">
+              <img class="media-object" data-src="holder.js/64x64" alt="64x64" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABN0lEQVR4Xu2YQQ6EIAxFdeXFODZnYu9qJk5C0sGiUiAx8FyKVPr76VPWEMJnmfhaEQAHsAXoARP3wIUmCAWgABSAAlBgYgXAIBgEg2AQDE4MAX6GwCAYBINgEAyCwYkVAIO1GPTe//nHOXfyU3xGG9PM1yNmzuRVDpCJ5ZKUyTwRoEfMqx3eTIBcJbdtW/Z9/w2XCtAqZncB5Atkkkc1NQFileVYFCi1fypcLqa1jzd1QM6+2va4EycKWRLTIkI3AY7FPKmmVmF5LxXvLmapCF0FiItp5QCZXClZulBAq/IVBtN9rvUAa8zSysfnqxxgfemb5iFA7Zfgm6ppWQsOwAEciXEkxpGYpXuOMgcKQAEoAAWgwCgd3ZIHFIACUAAKQAFL9xxlDhSAAlAACkCBUTq6JY/pKfAFwO6XkLwNdToAAAAASUVORK5CYII=" style="width: 64px; height: 64px;">
+            </a>
+            <div class="media-body">
+              <h4 class="media-heading">Media heading</h4>
+              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<div class="highlight">
+<pre><code class="language-html xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"media"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">a</span> <span class="attribute">class</span>=<span class="value">"pull-left"</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">img</span> <span class="attribute">class</span>=<span class="value">"media-object"</span> <span class="attribute">src</span>=<span class="value">"..."</span> <span class="attribute">alt</span>=<span class="value">"..."</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"media-body"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">h4</span> <span class="attribute">class</span>=<span class="value">"media-heading"</span>&gt;</span>Media heading<span class="tag">&lt;/<span class="title">h4</span>&gt;</span>
+    ...
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
+
+</div>
+
+    <h3 id="media-list">媒体列表</h3>
+    <p>用一点点额外的标记，就能在列表内使用媒体（对评论或文章列表很有用）。</p>
+    <div class="bs-example">
+      <ul class="media-list">
+        <li class="media">
+          <a class="pull-left" href="#">
+            <img class="media-object" data-src="holder.js/64x64" alt="64x64" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABN0lEQVR4Xu2YQQ6EIAxFdeXFODZnYu9qJk5C0sGiUiAx8FyKVPr76VPWEMJnmfhaEQAHsAXoARP3wIUmCAWgABSAAlBgYgXAIBgEg2AQDE4MAX6GwCAYBINgEAyCwYkVAIO1GPTe//nHOXfyU3xGG9PM1yNmzuRVDpCJ5ZKUyTwRoEfMqx3eTIBcJbdtW/Z9/w2XCtAqZncB5Atkkkc1NQFileVYFCi1fypcLqa1jzd1QM6+2va4EycKWRLTIkI3AY7FPKmmVmF5LxXvLmapCF0FiItp5QCZXClZulBAq/IVBtN9rvUAa8zSysfnqxxgfemb5iFA7Zfgm6ppWQsOwAEciXEkxpGYpXuOMgcKQAEoAAWgwCgd3ZIHFIACUAAKQAFL9xxlDhSAAlAACkCBUTq6JY/pKfAFwO6XkLwNdToAAAAASUVORK5CYII=" style="width: 64px; height: 64px;">
+          </a>
+          <div class="media-body">
+            <h4 class="media-heading">Media heading</h4>
+            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+            
+            <div class="media">
+              <a class="pull-left" href="#">
+                <img class="media-object" data-src="holder.js/64x64" alt="64x64" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABN0lEQVR4Xu2YQQ6EIAxFdeXFODZnYu9qJk5C0sGiUiAx8FyKVPr76VPWEMJnmfhaEQAHsAXoARP3wIUmCAWgABSAAlBgYgXAIBgEg2AQDE4MAX6GwCAYBINgEAyCwYkVAIO1GPTe//nHOXfyU3xGG9PM1yNmzuRVDpCJ5ZKUyTwRoEfMqx3eTIBcJbdtW/Z9/w2XCtAqZncB5Atkkkc1NQFileVYFCi1fypcLqa1jzd1QM6+2va4EycKWRLTIkI3AY7FPKmmVmF5LxXvLmapCF0FiItp5QCZXClZulBAq/IVBtN9rvUAa8zSysfnqxxgfemb5iFA7Zfgm6ppWQsOwAEciXEkxpGYpXuOMgcKQAEoAAWgwCgd3ZIHFIACUAAKQAFL9xxlDhSAAlAACkCBUTq6JY/pKfAFwO6XkLwNdToAAAAASUVORK5CYII=" style="width: 64px; height: 64px;">
+              </a>
+              <div class="media-body">
+                <h4 class="media-heading">Nested media heading</h4>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+                
+                <div class="media">
+                  <a class="pull-left" href="#">
+                    <img class="media-object" data-src="holder.js/64x64" alt="64x64" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABN0lEQVR4Xu2YQQ6EIAxFdeXFODZnYu9qJk5C0sGiUiAx8FyKVPr76VPWEMJnmfhaEQAHsAXoARP3wIUmCAWgABSAAlBgYgXAIBgEg2AQDE4MAX6GwCAYBINgEAyCwYkVAIO1GPTe//nHOXfyU3xGG9PM1yNmzuRVDpCJ5ZKUyTwRoEfMqx3eTIBcJbdtW/Z9/w2XCtAqZncB5Atkkkc1NQFileVYFCi1fypcLqa1jzd1QM6+2va4EycKWRLTIkI3AY7FPKmmVmF5LxXvLmapCF0FiItp5QCZXClZulBAq/IVBtN9rvUAa8zSysfnqxxgfemb5iFA7Zfgm6ppWQsOwAEciXEkxpGYpXuOMgcKQAEoAAWgwCgd3ZIHFIACUAAKQAFL9xxlDhSAAlAACkCBUTq6JY/pKfAFwO6XkLwNdToAAAAASUVORK5CYII=" style="width: 64px; height: 64px;">
+                  </a>
+                  <div class="media-body">
+                    <h4 class="media-heading">Nested media heading</h4>
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="media">
+              <a class="pull-left" href="#">
+                <img class="media-object" data-src="holder.js/64x64" alt="64x64" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABN0lEQVR4Xu2YQQ6EIAxFdeXFODZnYu9qJk5C0sGiUiAx8FyKVPr76VPWEMJnmfhaEQAHsAXoARP3wIUmCAWgABSAAlBgYgXAIBgEg2AQDE4MAX6GwCAYBINgEAyCwYkVAIO1GPTe//nHOXfyU3xGG9PM1yNmzuRVDpCJ5ZKUyTwRoEfMqx3eTIBcJbdtW/Z9/w2XCtAqZncB5Atkkkc1NQFileVYFCi1fypcLqa1jzd1QM6+2va4EycKWRLTIkI3AY7FPKmmVmF5LxXvLmapCF0FiItp5QCZXClZulBAq/IVBtN9rvUAa8zSysfnqxxgfemb5iFA7Zfgm6ppWQsOwAEciXEkxpGYpXuOMgcKQAEoAAWgwCgd3ZIHFIACUAAKQAFL9xxlDhSAAlAACkCBUTq6JY/pKfAFwO6XkLwNdToAAAAASUVORK5CYII=" style="width: 64px; height: 64px;">
+              </a>
+              <div class="media-body">
+                <h4 class="media-heading">Nested media heading</h4>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="media">
+          <a class="pull-right" href="#">
+            <img class="media-object" data-src="holder.js/64x64" alt="64x64" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABN0lEQVR4Xu2YQQ6EIAxFdeXFODZnYu9qJk5C0sGiUiAx8FyKVPr76VPWEMJnmfhaEQAHsAXoARP3wIUmCAWgABSAAlBgYgXAIBgEg2AQDE4MAX6GwCAYBINgEAyCwYkVAIO1GPTe//nHOXfyU3xGG9PM1yNmzuRVDpCJ5ZKUyTwRoEfMqx3eTIBcJbdtW/Z9/w2XCtAqZncB5Atkkkc1NQFileVYFCi1fypcLqa1jzd1QM6+2va4EycKWRLTIkI3AY7FPKmmVmF5LxXvLmapCF0FiItp5QCZXClZulBAq/IVBtN9rvUAa8zSysfnqxxgfemb5iFA7Zfgm6ppWQsOwAEciXEkxpGYpXuOMgcKQAEoAAWgwCgd3ZIHFIACUAAKQAFL9xxlDhSAAlAACkCBUTq6JY/pKfAFwO6XkLwNdToAAAAASUVORK5CYII=" style="width: 64px; height: 64px;">
+          </a>
+          <div class="media-body">
+            <h4 class="media-heading">Media heading</h4>
+            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+          </div>
+        </li>
+      </ul>
+    </div>
+<div class="highlight">
+<pre><code class="language-html xml"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"media-list"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"media"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">a</span> <span class="attribute">class</span>=<span class="value">"pull-left"</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">img</span> <span class="attribute">class</span>=<span class="value">"media-object"</span> <span class="attribute">src</span>=<span class="value">"..."</span> <span class="attribute">alt</span>=<span class="value">"..."</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"media-body"</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">h4</span> <span class="attribute">class</span>=<span class="value">"media-heading"</span>&gt;</span>Media heading<span class="tag">&lt;/<span class="title">h4</span>&gt;</span>
+      ...
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span></code></pre>
+
+</div>
+  </div>
+
+
+
+  
+  <div class="bs-docs-section">
+    <div class="page-header">
+      <h1 id="list-group">列表组</h1>
+    </div>
+    <p class="lead">列表组是灵活又强大的组件，不仅仅用于显示简单的成列表的元素，还用于复杂的定制的内容。</p>
+
+    <h3 id="list-group-basic">基本案例</h3>
+    <p>最简单的列表只是无顺序列表，列表条目和正确的类。Build upon it with the options that follow, or your own CSS as needed.</p>
+    <div class="bs-example">
+      <ul class="list-group">
+        <li class="list-group-item">Cras justo odio</li>
+        <li class="list-group-item">Dapibus ac facilisis in</li>
+        <li class="list-group-item">Morbi leo risus</li>
+        <li class="list-group-item">Porta ac consectetur ac</li>
+        <li class="list-group-item">Vestibulum at eros</li>
+      </ul>
+    </div>
+<div class="highlight">
+<pre><code class="language-html xml"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"list-group"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"list-group-item"</span>&gt;</span>Cras justo odio<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"list-group-item"</span>&gt;</span>Dapibus ac facilisis in<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"list-group-item"</span>&gt;</span>Morbi leo risus<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"list-group-item"</span>&gt;</span>Porta ac consectetur ac<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"list-group-item"</span>&gt;</span>Vestibulum at eros<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span></code></pre>
+
+</div>
+
+    <h3 id="list-group-badges">徽章</h3>
+    <p>给列表组加入徽章，它会自动地放在右面。</p>
+    <div class="bs-example">
+      <ul class="list-group">
+        <li class="list-group-item">
+          <span class="badge">14</span>
+          Cras justo odio
+        </li>
+        <li class="list-group-item">
+          <span class="badge">2</span>
+          Dapibus ac facilisis in
+        </li>
+        <li class="list-group-item">
+          <span class="badge">1</span>
+          Morbi leo risus
+        </li>
+      </ul>
+    </div>
+<div class="highlight">
+<pre><code class="language-html xml"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"list-group"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"list-group-item"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"badge"</span>&gt;</span>14<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+    Cras justo odio
+  <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span></code></pre>
+
+</div>
+
+    <h3 id="list-group-linked">链接条目</h3>
+    <p>用<code>&lt;a&gt;</code>标签而不是<code>&lt;li&gt;</code>标签（也就是说父元素是<code>&lt;div&gt;</code>而不是<code>&lt;ul&gt;</code>）。没必要给每个元素都加一个父元素。</p>
+    <div class="bs-example">
+      <div class="list-group">
+        <a href="#" class="list-group-item active">
+          Cras justo odio
+        </a>
+        <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+        <a href="#" class="list-group-item">Morbi leo risus</a>
+        <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+        <a href="#" class="list-group-item">Vestibulum at eros</a>
+      </div>
+    </div>
+<div class="highlight">
+<pre><code class="language-html xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"list-group"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"list-group-item active"</span>&gt;</span>
+    Cras justo odio
+  <span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"list-group-item"</span>&gt;</span>Dapibus ac facilisis in<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"list-group-item"</span>&gt;</span>Morbi leo risus<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"list-group-item"</span>&gt;</span>Porta ac consectetur ac<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"list-group-item"</span>&gt;</span>Vestibulum at eros<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
+
+</div>
+
+    <h3 id="list-group-custom-content">定制内容</h3>
+    <p>在里面可以加几乎任何HTML，甚至是像下面的带链接的列表组。</p>
+    <div class="bs-example">
+      <div class="list-group">
+        <a href="#" class="list-group-item active">
+          <h4 class="list-group-item-heading">List group item heading</h4>
+          <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+        </a>
+        <a href="#" class="list-group-item">
+          <h4 class="list-group-item-heading">List group item heading</h4>
+          <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+        </a>
+        <a href="#" class="list-group-item">
+          <h4 class="list-group-item-heading">List group item heading</h4>
+          <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+        </a>
+      </div>
+    </div>
+<div class="highlight">
+<pre><code class="language-html xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"list-group"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"list-group-item active"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">h4</span> <span class="attribute">class</span>=<span class="value">"list-group-item-heading"</span>&gt;</span>List group item heading<span class="tag">&lt;/<span class="title">h4</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">p</span> <span class="attribute">class</span>=<span class="value">"list-group-item-text"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
+
+</div>
+  </div>
+
+
+
+
+  
+  <div class="bs-docs-section">
+    <div class="page-header">
+      <h1 id="panels">面版</h1>
+    </div>
+    <p class="lead">虽然不总是必须，但是某些时候你可能需要将某些内容放到一个盒子里。对于这种情况，可以试试面板组件。</p>
+
+    <h3 id="panels-basic">基本案例</h3>
+    <p>默认的<code>.panel</code>所做的只是提供基本的边界和内部，来包含内容。</p>
+    <div class="bs-example">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          Basic panel example
+        </div>
+      </div>
+    </div>
+<div class="highlight">
+<pre><code class="language-html xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"panel panel-default"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"panel-body"</span>&gt;</span>
+    Basic panel example
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
+
+</div>
+
+    <h3 id="panels-heading">带标题的面版</h3>
+    <p>用<code>.panel-heading</code>可以简单地加入一个标题容器。您也可以用<code>&lt;h1&gt;</code>-<code>&lt;h6&gt;</code>和<code>.panel-title</code>类加入预定义样式的标题。</p>
+    <div class="bs-example">
+      <div class="panel panel-default">
+        <div class="panel-heading">Panel heading without title</div>
+        <div class="panel-body">
+          Panel content
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Panel title</h3>
+        </div>
+        <div class="panel-body">
+          Panel content
+        </div>
+      </div>
+    </div>
+<div class="highlight">
+<pre><code class="language-html xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"panel panel-default"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"panel-heading"</span>&gt;</span>Panel heading without title<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"panel-body"</span>&gt;</span>
+    Panel content
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"panel panel-default"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"panel-heading"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">h3</span> <span class="attribute">class</span>=<span class="value">"panel-title"</span>&gt;</span>Panel title<span class="tag">&lt;/<span class="title">h3</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"panel-body"</span>&gt;</span>
+    Panel content
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
+
+</div>
+
+    <h3 id="panels-footer">带脚注的面版</h3>
+    <p>把按钮或次要的文本放入<code>.panel-footer</code>。注意面版的脚注<strong>不会</strong>从带意义的替换中继承颜色，因为它不是在前面的内容。</p>
+    <div class="bs-example">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          Panel content
+        </div>
+        <div class="panel-footer">Panel footer</div>
+      </div>
+    </div>
+<div class="highlight">
+<pre><code class="language-html xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"panel panel-default"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"panel-body"</span>&gt;</span>
+    Panel content
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"panel-footer"</span>&gt;</span>Panel footer<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
+
+</div>
+
+<h3 id="panels-alternatives">有意义的替换</h3>
+    <p>像其它组件一样，可以简单地通过加入有意义的状态类，给特定的内容使用更有意义的面版。</p>
+    <div class="bs-example">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">Panel title</h3>
+        </div>
+        <div class="panel-body">
+          Panel content
+        </div>
+      </div>
+      <div class="panel panel-success">
+        <div class="panel-heading">
+          <h3 class="panel-title">Panel title</h3>
+        </div>
+        <div class="panel-body">
+          Panel content
+        </div>
+      </div>
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h3 class="panel-title">Panel title</h3>
+        </div>
+        <div class="panel-body">
+          Panel content
+        </div>
+      </div>
+      <div class="panel panel-warning">
+        <div class="panel-heading">
+          <h3 class="panel-title">Panel title</h3>
+        </div>
+        <div class="panel-body">
+          Panel content
+        </div>
+      </div>
+      <div class="panel panel-danger">
+        <div class="panel-heading">
+          <h3 class="panel-title">Panel title</h3>
+        </div>
+        <div class="panel-body">
+          Panel content
+        </div>
+      </div>
+    </div>
+<div class="highlight">
+<pre><code class="language-html r">&lt;div class=<span class="string">"panel panel-primary"</span>&gt;<span class="keyword">...</span>&lt;/div&gt;
+&lt;div class=<span class="string">"panel panel-success"</span>&gt;<span class="keyword">...</span>&lt;/div&gt;
+&lt;div class=<span class="string">"panel panel-info"</span>&gt;<span class="keyword">...</span>&lt;/div&gt;
+&lt;div class=<span class="string">"panel panel-warning"</span>&gt;<span class="keyword">...</span>&lt;/div&gt;
+&lt;div class=<span class="string">"panel panel-danger"</span>&gt;<span class="keyword">...</span>&lt;/div&gt;</code></pre>
+
+</div>
+
+    <h3 id="panels-tables">带表格的面版</h3>
+    <p>为了无缝的设计，在面版中加入<code>.table</code>。如果有<code>.panel-body</code>，就在表格的上方加上一个用于分割的边界。</p>
+    <div class="bs-example">
+      <div class="panel panel-default">
+        
+        <div class="panel-heading">Panel heading</div>
+        <div class="panel-body">
+          <p>Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+        </div>
+
+        
+        <table class="table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Username</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+<div class="highlight">
+<pre><code class="language-html xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"panel panel-default"</span>&gt;</span>
+  <span class="comment">&lt;!-- Default panel contents --&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"panel-heading"</span>&gt;</span>Panel heading<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"panel-body"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">p</span>&gt;</span>...<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+
+  <span class="comment">&lt;!-- Table --&gt;</span>
+  <span class="tag">&lt;<span class="title">table</span> <span class="attribute">class</span>=<span class="value">"table"</span>&gt;</span>
+    ...
+  <span class="tag">&lt;/<span class="title">table</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
+
+</div>
+
+    <p>如果没有<code>.panel-body</code>，面版标题会和表格连接起来，没有空隙。</p>
+    <div class="bs-example">
+      <div class="panel panel-default">
+        
+        <div class="panel-heading">Panel heading</div>
+
+        
+        <table class="table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Username</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+<div class="highlight">
+<pre><code class="language-html xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"panel panel-default"</span>&gt;</span>
+  <span class="comment">&lt;!-- Default panel contents --&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"panel-heading"</span>&gt;</span>Panel heading<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+
+  <span class="comment">&lt;!-- Table --&gt;</span>
+  <span class="tag">&lt;<span class="title">table</span> <span class="attribute">class</span>=<span class="value">"table"</span>&gt;</span>
+    ...
+  <span class="tag">&lt;/<span class="title">table</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
+
+</div>
+
+
+
+    <h3 id="panels-list-group">带列表组的面版</h3>
+    <p>可以简单地在任何面版中使用最大宽度的<a href="#list-group">列表组</a>。</p>
+    <div class="bs-example">
+      <div class="panel panel-default">
+        
+        <div class="panel-heading">Panel heading</div>
+        <div class="panel-body">
+          <p>Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+        </div>
+
+        
+        <ul class="list-group">
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Dapibus ac facilisis in</li>
+          <li class="list-group-item">Morbi leo risus</li>
+          <li class="list-group-item">Porta ac consectetur ac</li>
+          <li class="list-group-item">Vestibulum at eros</li>
+        </ul>
+      </div>
+    </div>
+<div class="highlight">
+<pre><code class="language-html xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"panel panel-default"</span>&gt;</span>
+  <span class="comment">&lt;!-- Default panel contents --&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"panel-heading"</span>&gt;</span>Panel heading<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"panel-body"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">p</span>&gt;</span>...<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+
+  <span class="comment">&lt;!-- List group --&gt;</span>
+  <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"list-group"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"list-group-item"</span>&gt;</span>Cras justo odio<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"list-group-item"</span>&gt;</span>Dapibus ac facilisis in<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"list-group-item"</span>&gt;</span>Morbi leo risus<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"list-group-item"</span>&gt;</span>Porta ac consectetur ac<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"list-group-item"</span>&gt;</span>Vestibulum at eros<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
+
+</div>
+
+  </div>
+
+
+
+
+
+  
+  <div class="bs-docs-section">
+    <div class="page-header">
+      <h1 id="wells">Well</h1>
+    </div>
+
+    <h3>默认效果</h3>
+    <p>把Well用在元素上，能有嵌入(inset)的的简单效果。</p>
+    <div class="bs-example">
+      <div class="well">
+        Look, I'm in a well!
+      </div>
+    </div>
+<div class="highlight">
+<pre><code class="language-html r">&lt;div class=<span class="string">"well"</span>&gt;<span class="keyword">...</span>&lt;/div&gt;</code></pre>
+
+</div>
+    <h3>可选类</h3>
+    <p>用这两种可选修饰类，可以控制内补（padding）和圆角。</p>
+    <div class="bs-example">
+      <div class="well well-lg">
+        Look, I'm in a large well!
+      </div>
+    </div>
+<div class="highlight">
+<pre><code class="language-html r">&lt;div class=<span class="string">"well well-lg"</span>&gt;<span class="keyword">...</span>&lt;/div&gt;</code></pre>
+
+</div>
+
+    <div class="bs-example">
+      <div class="well well-sm">
+        Look, I'm in a small well!
+      </div>
+    </div>
+<div class="highlight">
+<pre><code class="language-html r">&lt;div class=<span class="string">"well well-sm"</span>&gt;<span class="keyword">...</span>&lt;/div&gt;</code></pre>
+
+</div>
+  </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    
+    <footer class="bs-footer" role="contentinfo">
+      <div class="container">
+        
+
+        <p>Designed and built with all the love in the world by <a href="http://twitter.com/mdo" target="_blank">@mdo</a> and <a href="http://twitter.com/fat" target="_blank">@fat</a>.</p>
+        <p>Code licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+        <ul class="footer-links">
+          <li>当前版本： v3.0.0</li>
+          <li class="muted">·</li>
+          <li><a href="http://www.bootcss.com/">Bootstrap 2.3.2 文档</a></li>
+          <li class="muted">·</li>
+          <li><a href="http://blog.getbootstrap.com/">Blog</a></li>
+          <li class="muted">·</li>
+          <li><a href="https://github.com/twbs/bootstrap/issues?state=open">Issues</a></li>
+          <li class="muted">·</li>
+          <li><a href="https://github.com/twbs/bootstrap/releases">Releases</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    
+    
+
+<script src="../src_files/jquery.js"></script>
+<script src="../src_files/bootstrap.js"></script>
+
+
+<script src="../src_files/holder.js"></script>
+<script src="../src_files/highlight.js"></script><script>hljs.initHighlightingOnLoad();</script>
+
+<script src="../src_files/application.js"></script>
+
+
+
+
+    <script type="text/javascript">
+    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F3d8e7fc0de8a2a75f2ca3bfe128e6391' type='text/javascript'%3E%3C/script%3E"));
+    </script><script src="../src_files/h.js" type="text/javascript"></script>
+
+
+  
+
+</body></html>
